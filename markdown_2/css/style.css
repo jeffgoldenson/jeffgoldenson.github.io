@@ -9,11 +9,14 @@
 
 body {
 	font-size:   13pt;
-	color:       #222;
-	background:  #fbfbfb;
+	color:       #000;
+	background:  #fff;
+	/*/background:  #ffb700;/*/
 	font-family: "Helvetica Neue", Arial, Helvetica, sans-serif;
 	line-height: 1.4;
-	margin:      10%;
+	margin: auto;
+	max-width: 34em;
+
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -22,14 +25,17 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 h1 {
-	font-size:     3em;
-	line-height:   1;
-	margin-bottom: 0.5em;
-	margin-top:    2em;
+	font-size:     4em;
+	font-weight: bold;
+	line-height: 1;
+	margin: 0.5em 0;
+	background-color: rgba( 0, 0, 0, .9 );
+	color: #fff;
 }
 
 h2 {
-	font-size:     2em;
+	font-size:     2.25em;
+	font-weight: bold;
 	margin-bottom: 0.75em;
 	margin-top:    1.5em;
 }
@@ -49,7 +55,7 @@ h4 {
 h5 {
 	font-size:     1em;
 	font-weight:   bold;
-	margin-bottom: 1.5em;
+	margin-bottom: 1.25em;
 }
 
 h6 {
@@ -63,11 +69,15 @@ h1 img, h2 img, h3 img, h4 img, h5 img, h6 img {
 
 img {
 	max-width: 100%;
+	border: 1px solid #ffb700;
+	border-radius: 3pt;
 }
 
 video {
     width: 100%;
     object-fit: scale-down;
+    border: 1px solid #ffb700;
+	border-radius: 3pt;
 }
 
 p {
@@ -186,21 +196,37 @@ code {
 
 p > code {
 	padding:    0.2em 0.4em;
-	background: #eee;
+	background: #ffb700;
 }
 
+
 pre {
-	color:         #000;
+	color:         #5e2ca5;
 	text-align:    left;
 	line-height:   1.2em;
 	overflow-x:    scroll;
-	background:    #f8f8f8;
+	background:    #ffb700;
 	padding:       20pt;
 	margin:        20pt 0;
 	border-radius: 3pt;
 	white-space:   pre-wrap;
 	tab-size:      4;
 }
+
+/*/
+pre {
+	color:         #72e0d1;
+	text-align:    left;
+	line-height:   1.2em;
+	overflow-x:    scroll;
+	background:    #001628;
+	padding:       20pt;
+	margin:        20pt 0;
+	border-radius: 3pt;
+	white-space:   pre-wrap;
+	tab-size:      4;
+}
+/*/
 
 .syntax-all {
 }
@@ -332,8 +358,8 @@ a:target {
 	}
 }
 
-@media screen and (max-width: 736px),
-       screen and (max-width: 808px) and (max-height: 414px) {
+@media screen and (max-width: 30em),
+       screen and (max-width: 30em) and (max-height: 414px) {
 	body {
 		margin:20px;
 	}
