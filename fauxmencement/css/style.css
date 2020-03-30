@@ -69,8 +69,15 @@ h1 img, h2 img, h3 img, h4 img, h5 img, h6 img {
 
 img {
 	max-width: 100%;
-	border: 1px solid #ffb700;
 	border-radius: 3pt;
+}
+
+img[src$=".gif"] {
+	border: 0px solid #ffb700;
+}
+
+img[src$=".jpg"]  {
+	border: 1px solid #ffb700;
 }
 
 video {
@@ -138,9 +145,9 @@ ol {
 }
 
 figure {
-	margin:     1.5em 0;
+	margin:     0;
 	width:      100%;
-	text-align: center;
+	text-align: left;
 }
 
 figcaption {
