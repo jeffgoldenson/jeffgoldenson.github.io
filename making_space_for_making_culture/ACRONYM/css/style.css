@@ -1,10 +1,7 @@
 /*
-	Helvetica Neue
 
-	Demo css to show basic, more technical styling
-
-	Visit http://www.ulysses.app/styles for full reference
-
+	Buildingways, a riff off of tachyons.io.  Thank you tachyons-folk!	
+	www.buildingways.co
 */
 
 body {
@@ -26,7 +23,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 h1 {
-	font-size:     4em;
+	font-size:     3.6em;
 	font-weight: bold;
 	line-height: 1;
 	margin: 0.5em 0;
@@ -62,7 +59,7 @@ h4 {
 h5 {
 	font-size: .85rem;
 	line-height:   1;
-	margin-bottom: -1em;
+	margin-bottom: -x`1em;
 	text-transform: uppercase;
 	letter-spacing: .1em;
 }
