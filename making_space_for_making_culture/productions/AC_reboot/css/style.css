@@ -94,7 +94,7 @@ img[src$=".jpg"]  {
 video {
     width: 100%;
     object-fit: scale-down;
-    border: 1px solid #ffb700;
+    border: 0px solid #ffb700;
 	border-radius: 3pt;
 }
 
