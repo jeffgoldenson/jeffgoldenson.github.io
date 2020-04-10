@@ -7,7 +7,7 @@
 body {
 	font-size:   13pt;
 	color:       #000;
-	background:  #ffffff;
+	background:  #f7f6f0;
 	/*/background:  #ffb700;/*/
 	font-family: "Helvetica Neue", Arial, Helvetica, sans-serif;
 	line-height: 1.4;
@@ -48,6 +48,8 @@ h3 {
 	font-size:   1.5em;
 	line-height: 1;
 	margin-top:  1.5em;
+	font-weight: bold;
+	font-style: italic;
 }
 
 h4 {
@@ -90,10 +92,15 @@ img[src$=".jpg"]  {
 }
 
 video {
-    width: 100%;
     object-fit: scale-down;
     border: 1px solid #ffb700;
 	border-radius: 3pt;
+	position: relative; 
+	padding-bottom: 56.25%; 
+	height: 0; 
+	overflow: hidden; 
+	max-width: 100%; 
+	height: auto;
 }
 
 p {
