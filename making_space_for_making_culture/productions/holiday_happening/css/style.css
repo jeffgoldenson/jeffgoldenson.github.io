@@ -7,7 +7,7 @@
 body {
 	font-size:   13pt;
 	color:       #000;
-	background:  #f7f6f0;
+	background:  #fff;
 	/*/background:  #ffb700;/*/
 	font-family: "Helvetica Neue", Arial, Helvetica, sans-serif;
 	line-height: 1.4;
@@ -414,3 +414,26 @@ a:target {
     width:100%;
     position:absolute;
  }
+
+ [style*="--aspect-ratio"] > :first-child {
+  width: 100%;
+}
+[style*="--aspect-ratio"] > img {  
+  height: auto;
+} 
+@supports (--custom:property) {
+  [style*="--aspect-ratio"] {
+    position: relative;
+  }
+  [style*="--aspect-ratio"]::before {
+    content: "";
+    display: block;
+    padding-bottom: calc(100% / (var(--aspect-ratio)));
+  }  
+  [style*="--aspect-ratio"] > :first-child {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+  }  
+}
