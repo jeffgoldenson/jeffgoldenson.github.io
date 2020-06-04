@@ -80,9 +80,9 @@ h1 img, h2 img, h3 img, h4 img, h5 img, h6 img {
 
 img {
 	max-width: 80%;
-	margin: auto;
+	margin: 20px auto;
 	border-radius: 3pt;
-	    display: block;
+	display: block;
 
 }
 
@@ -102,7 +102,7 @@ video {
 }
 
 p {
-	margin: 0 0 1.5em;
+	margin: 1.5em 0 1.5em;
 }
 
 a:focus, a:hover {
@@ -416,7 +416,29 @@ a:target {
 	}
 }
 
+div.jx-slider {
+	width: 100%;
+	height: 100%;
+	position: relative;
+	overflow: hidden;
+	cursor: pointer;
+	color: #0099ff;
+}
 
+.juxtapose-responsive{
+    overflow:hidden;
+    padding-bottom:76.25%;
+    position:relative;
+    height:0;
+}
+
+.juxtapose-responsive iframe{
+    left:0;
+    top:0;
+    height:100%;
+    width:100%;
+    position:absolute;
+ }
 
 .video-responsive{
     overflow:hidden;
