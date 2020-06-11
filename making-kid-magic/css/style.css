@@ -4,15 +4,11 @@
 	www.buildingways.co
 */
 
-
 body {
-
-}
-article {
 	font-size:   13pt;
 	color:       #000;
 	/*/background:  #f3efe0;/*/
-	/*/background:  #efefef;/*/
+	background:  #efefef;
 
 	/*/background:  #ffb700;/*/
 	font-family: "Helvetica Neue", Arial, Helvetica, sans-serif;
@@ -22,7 +18,7 @@ article {
 
 }
 
-/*/
+
 h1, h2, h3, h4, h5, h6 {
 	font-weight: normal;
 	color:       #111;
@@ -43,6 +39,9 @@ h2 {
 	font-weight: bold;
 	margin-bottom: 0.75em;
 	margin-top:    1.5em; 
+	/*/padding: 0 5px;
+	background-color: rgba(255, 183, 0, 1);
+	color: #333;/*/
 	padding: 0 0px;
 	border-bottom: 1px solid #ffb700;
 }
@@ -80,9 +79,9 @@ h6 {
 h1 img, h2 img, h3 img, h4 img, h5 img, h6 img {
 	margin: 0;
 }
-/*/
+
 img {
-	max-width: 100%;
+	max-width: 80%;
 	margin: 20px auto;
 	border-radius: 3pt;
 	display: block;
@@ -103,7 +102,6 @@ video {
     border: 1px solid #ffb700;
 	border-radius: 3pt;
 }
-/*/
 
 p {
 	margin: 1.5em 0 1.5em;
@@ -117,22 +115,17 @@ a {
 	color:           #06c;
 	text-decoration: underline;
 }
-/*/
+
 blockquote {
 	margin: 1.5em 1.5em 1.5em 1.5em;
 	color:  #111;
 	font-family: georgia;
-	background: #fffceb;
+	background: #efefef;
 	padding: 1em;
 	border-radius: 3pt;
 	border: 1px solid #ccc;
 }
 
-.splash {
-	background: url(../img/office.jpg);
-	width: auto;
-}
-/*/
 strong, dfn {
 	font-weight: bold;
 }
@@ -177,7 +170,7 @@ figure {
 	width:      100%;
 	text-align: left;
 }
-/*/
+
 figcaption {
 	font-size:     0.8em;
 	padding:       0.5em 1em;
@@ -186,12 +179,11 @@ figcaption {
 	font-style: italic;
 
 }
-/*/
-/*/
+
 figure img {
 	margin-bottom: 0px;
 }
-/*/
+
 hr {
 	border:        0px;
 	border-top:    1px solid #ddd;
@@ -225,14 +217,12 @@ li {
 	margin-bottom: 0.75em;
 	margin-top:    0.75em;
 }
-/*/
-
 
 /* Code Highlighting */
 
 code {
 	font-family: 'Menlo', monospace;
-	font-size:   12pt;
+	font-size:   10.5pt;
 }
 
 p > code {
@@ -245,9 +235,26 @@ p > code {
 	margin:        20pt 0;
 	border-radius: 3pt;
 	white-space:   pre-wrap;
+	tab-size:      4;
 }
 
 
+pre {
+	color:         #5e2ca5;
+    color:         #000;
+	text-align:    left;
+	line-height:   1.2em;
+	background:    #f3efe0;
+	padding:       20pt 40pt;
+	margin:        20pt 0;
+	border-radius: 3pt;
+	white-space:   pre-wrap;
+	tab-size:      4;
+	text-shadow: 0px 1px 1px #fff;
+	border:			1px solid #ccc;
+}
+
+/*/
 pre {
 	color:         #72e0d1;
 	text-align:    left;
@@ -258,10 +265,9 @@ pre {
 	margin:        20pt 0;
 	border-radius: 3pt;
 	white-space:   pre-wrap;
-	text-shadow: 1px 1px 0px #5e2ca5;
-	border:			1px solid #ccc;
+	tab-size:      4;
 }
-
+/*/
 
 .syntax-all {
 }
@@ -276,7 +282,6 @@ pre {
 
 .syntax-keyword {
 	color: #d73a49;
-
 }
 
 .syntax-parameter {
@@ -349,7 +354,6 @@ pre {
 	color: #e36209;
 }
 
-/*/
 @keyframes highfade {
 	0% {
 		background-color: none;
@@ -413,7 +417,7 @@ a:target {
 		font-size: 1.8em;
 	}
 }
-/*/
+
 div.jx-slider {
 	width: 100%;
 	height: 100%;
