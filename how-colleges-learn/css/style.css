@@ -5,14 +5,13 @@
 */
 
 html {
-
-	border: 15px solid #fff;
+	border: 10px solid #fff;
     padding: 0;
     scroll-behavior: smooth;
 }
 
 body {
-	font-size:   18px;
+	font-size: 0.9375rem;
 	color:       #333;
 	background: #efefef;
 	font-family:  BlinkMacSystemFont, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
@@ -89,8 +88,8 @@ h1 img, h2 img, h3 img, h4 img, h5 img, h6 img {
 }
 
 img {
-	max-width: 90%;
-	margin: 1.5em auto;
+	max-width: 95%;
+	margin: 1em auto;
 	border-radius: 3pt;
 	display: block;
 
@@ -106,7 +105,8 @@ img[src$=".jpg"]  {
 }
 
 video {
-    width: 100%;
+    max-width: 95%;
+	margin: 1em auto;
     object-fit: scale-down;
     border: 1px solid #ffb700;
 	border-radius: 3pt;
@@ -126,14 +126,14 @@ a {
 }
 
 blockquote {
-	margin: 1.5em 1.5em 1.5em 1.5em;
+	margin: .9rem;
 	color:  #333;
 	font-family:  'Georgia', serif;
 	background: #fff;
-	padding: .5em;
+	padding: .3em;
 	border-radius: 3pt;
 	border: 1px solid #ccc;
-	font-size: 20px;
+	font-size: 1rem;
 	border: 1px solid #333;
 }
 
@@ -427,30 +427,11 @@ a:target {
 	border:0;outline: 0;
 }
 
-@media screen and (max-width: 768px) {
-	body {
-		margin:30px;
-	}
-}
 
-@media screen and (max-width: 30em),
-       screen and (max-width: 30em) and (max-height: 414px) {
-	body {
-		margin:20px;
-	}
-	
-	ul,ol {
-		margin: 0;
-	}
-	
-	h1 {
-		font-size: 2em;
-	}
-	
-	h2 {
-		font-size: 1.8em;
-	}
-}
+
+
+
+
 
 div.jx-slider {
 	width: 100%;
@@ -508,6 +489,8 @@ div.jx-slider {
     position:absolute;
  }
 
+
+
  [style*="--aspect-ratio"] > :first-child {
   width: 100%;
 }
@@ -531,4 +514,40 @@ div.jx-slider {
   }  
 }
 
+
+/*/Media Queries/*/
+/*/Targer Everything !!Except!! Mobile/*/
+
+@media screen and (min-width: 40em) {
+	body {
+		font-size: 1.125rem;
+		line-height: 1.4;
+		margin: auto;
+		max-width: 40em;
+		
+	}
+	html {
+		border: 20px solid #fff;
+	}
+	blockquote {
+		margin: 1.5em 1.5em 1.5em 1.5em;
+		color:  #333;
+		font-family:  'Georgia', serif;
+		background: #fff;
+		padding: .5em;
+		border-radius: 3pt;
+		border: 1px solid #ccc;
+		font-size: 1.2rem;
+		border: 1px solid #333;
+		max-width: 36em;
+
+	}
+	img {
+		max-width: 90%;
+		margin: 1.5em auto;
+		border-radius: 3pt;
+		display: block;
+
+}
+}
 
