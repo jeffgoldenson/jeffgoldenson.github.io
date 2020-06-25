@@ -6,7 +6,7 @@
 
 html {
 	border: 10px solid #fff;
-    padding: 2em;
+    padding: 0;
     scroll-behavior: smooth;
 }
 
@@ -17,7 +17,7 @@ body {
 	font-family:  BlinkMacSystemFont, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
 	line-height: 1.4;
 	max-width: 30em;
-	margin: 1em;
+	margin: 1em auto;
 }
 
 
@@ -91,9 +91,9 @@ h1 img, h2 img, h3 img, h4 img, h5 img, h6 img {
 img {
 	max-width: 95%;
 	margin: 1em auto;
+	text-align: center;
 	border-radius: 3pt;
 	display: block;
-
 }
 
 
@@ -448,6 +448,7 @@ div.jx-slider {
     padding-bottom:76.25%;
     position:relative;
     height:0;
+    margin:0 .5em; 
 }
 
 .juxtapose-responsive iframe{
@@ -473,16 +474,16 @@ div.jx-slider {
     position:absolute;
  }
 
-.gif-responsive{
+.media-responsive{
     overflow:hidden;
     padding-bottom:56.25%;
     position:relative;
     height:0;
-    margin:0 3em; 
+    margin:0 .5em; 
 }
 
 
-.gif-responsive iframe{
+.media-responsive iframe{
     left:0;
     top:0;
     height:100%;
@@ -524,7 +525,7 @@ div.jx-slider {
 		font-size: 1.125rem;
 		line-height: 1.4;
 		margin: 2em;
-		max-width: 40em;
+		max-width: 38em;
 		padding: 2em;	
 		
 	}
