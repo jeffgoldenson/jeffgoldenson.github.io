@@ -4,18 +4,21 @@
 	www.buildingways.co
 */
 
-body {
-	font-size:   13pt;
-	color:       #000;
-	/*/background:  #f3efe0;/*/
-	background:  #fbf8f6;
+html {
 
-	/*/background:  #ffb700;/*/
-	font-family: "Helvetica Neue", Arial, Helvetica, sans-serif;
+	border: 15px solid #fff;
+    padding: 0;
+    scroll-behavior: smooth;
+}
+
+body {
+	font-size:   18px;
+	color:       #333;
+	background: #efefef;
+	font-family:  BlinkMacSystemFont, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
 	line-height: 1.4;
 	margin: auto;
 	max-width: 36em;
-
 }
 
 
@@ -25,36 +28,44 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 h1 {
-	font-size:     3.6em;
-	font-weight: bold;
+	font-size:     4em;
+	font-family:  'Georgia', serif;
 	line-height: 1;
 	margin: 0.5em 0;
 	padding: 0 5px;
 	color: #000;
-	text-shadow: 1px 1px #ffb700;
 }
 
 h2 {
-	font-size:     2.5em;
-	font-weight: bold;
-	margin-bottom: 0.75em;
-	margin-top:    1.5em; 
+	font-size:     3em;
+	font-family:  'Georgia', serif;
+	margin-bottom: 0.5em;
+	margin-top:    1.75em; 
 	padding: 0 0px;
 	border-bottom: 1px solid #ffb700;
+	text-align: center;
+
 }
 
 h3 {
 	font-size:   1.5em;
 	line-height: 1;
 	margin-top:  1.5em;
-	font-weight: bold;
-	font-style: italic;
+	font-family:  'Georgia', serif;
+	line-height: 1.2em;
+	padding: .5em 1em;
+	text-align: center;
+	border-bottom: 1px solid #ccc;
+	border-top: 1px solid #ccc;
 }
 
 h4 {
-	font:        1.5em 'andale mono', 'lucida console', monospace;	
-	line-height:   1.5em;
-	margin: 	   2em;
+	font-size:   1.3em;
+	margin:  .2em;
+	font-family:  'Georgia', serif;
+	line-height: 1.2em;
+	padding: .1em .1em;
+	text-align: center;
 }
 
 h5 {
@@ -85,12 +96,13 @@ img {
 
 }
 
+
 img[src$=".gif"] {
 	border: 0px solid #ffb700;
 }
 
 img[src$=".jpg"]  {
-	border: 1px solid #ffb700;
+	border: 0px solid #ffb700;
 }
 
 video {
@@ -110,17 +122,23 @@ a:focus, a:hover {
 
 a {
 	color:           #06c;
-	text-decoration: underline;
+	text-decoration: none;
 }
 
 blockquote {
 	margin: 1.5em 1.5em 1.5em 1.5em;
-	color:  #111;
-	font-family: georgia;
-	background: #efefef;
-	padding: 1em;
+	color:  #333;
+	font-family:  'Georgia', serif;
+	background: #fff;
+	padding: .5em;
 	border-radius: 3pt;
 	border: 1px solid #ccc;
+	font-size: 20px;
+	border: 1px solid #333;
+}
+
+blockquote p{
+	margin: 1.5em;
 }
 
 strong, dfn {
@@ -132,7 +150,17 @@ em, dfn {
 }
 
 del {
-	color: #666;
+	text-decoration: line-through;
+	color: #333;
+	-webkit-text-decoration-color: #ff4136; /* Safari */  
+	text-decoration-color: #ff4136;
+
+}
+
+ins {
+	text-decoration: underline;
+	-webkit-text-decoration-color: #ff4136; /* Safari */  
+  	text-decoration-color: #ff4136;
 }
 
 pre {
@@ -150,12 +178,8 @@ li ul, li ol {
 }
 
 ul, ol {
-	margin:       0 3em 1em 1em;
+	list-style: none;
 	padding-left: 1.5em;
-}
-
-ul {
-	list-style-type: disc;
 }
 
 ol {
@@ -169,12 +193,12 @@ figure {
 }
 
 figcaption {
-	font-size:     0.8em;
+	font-size:     1em;
 	padding:       0.5em 1em;
 	margin-bottom: 2em;
-	color:	  rgba(0,0,0,0.6);
-	font-style: italic;
-
+	color:	 #ff4136;
+	text-align: center;
+	font-family:  'Georgia', serif;
 }
 
 figure img {
@@ -210,9 +234,21 @@ ol p, ul p {
 	margin-bottom: 0px;
 }
 
+li::before {
+	content: "+"; 
+	font-weight: bold;
+	color: #ff4136;
+  	display: inline-block; 
+  	width: 1em;
+  	margin-left: 0em;
+ }
+
 li {
 	margin-bottom: 0.75em;
 	margin-top:    0.75em;
+	font-family:  'Georgia', serif;
+	font-size: 20px;
+
 }
 /*/
 
@@ -494,3 +530,5 @@ div.jx-slider {
     height: 100%;
   }  
 }
+
+
