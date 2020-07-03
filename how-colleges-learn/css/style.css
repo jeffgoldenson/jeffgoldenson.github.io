@@ -265,16 +265,15 @@ code {
 }
 
 p > code {
-	padding:    0.2em 0.4em;
-	background: #ffb700;
+	padding:    0.2em 0.2em;
 	color:         #5e2ca5;
+	color:         #444;
 	text-align:    left;
 	line-height:   1.2em;
-	background:    #ffb700;
-	margin:        20pt 0;
+	border:	1px solid #ccc;
 	border-radius: 3pt;
 	white-space:   pre-wrap;
-	tab-size:      4;
+	tab-size:      3;
 }
 
 
