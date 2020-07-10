@@ -5,15 +5,17 @@
 */
 
 html {
-	border: 10px solid #fff;
+	border-width: .5rem; 
+	border-color: #fff;
+	border-style: solid;
     padding: 0 1em;
     scroll-behavior: smooth;
 }
 
 body {
 	font-size: 1rem;
-	color:       #222;
-	background: #efefef;
+	color:       #333;
+	background: #f4f4f4;
 	font-family:  BlinkMacSystemFont, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
 	line-height: 1.4;
 	max-width: 30em;
@@ -96,9 +98,7 @@ img {
 	margin: 1em auto;
 	color:  #333;
 	font-family:  'Georgia', serif;
-	background: #fff;
 	border-radius: 3pt;
-
 }
 
 
@@ -526,13 +526,15 @@ div.jx-slider {
 
 @media screen and (min-width: 40em) {
 	html {
-		border: 20px solid #fff;
+		border-width: 1rem; 
+		border-color: #fff;
+		border-style: solid;
 		padding: 0 auto;
 
 	}
 
 	body {
-		font-size: 1.125rem;
+		font-size: 1.25rem;
 		line-height: 1.4;
 		margin: 2em auto;
 		max-width: 38em;
@@ -626,6 +628,12 @@ div.jx-slider {
 		text-shadow: 1px 1px 0px #5e2ca5;
 		border:			1px solid #ccc;
 		max-width: 36em;
+	}
+	li {
+		margin-bottom: 0.55em;
+		margin-top:    0.55em;
+		font-family:  'Georgia', serif;
+		font-size: 1.25rem;
 	}
 }
 
