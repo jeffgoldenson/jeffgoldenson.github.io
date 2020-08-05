@@ -25,6 +25,18 @@
         height: 280px;
       }
 
+      img.lazy {
+        opacity: 0;
+      }
+      img:not(.initial) {
+        transition: opacity .5s;
+      }
+      img.initial,
+      img.loaded,
+      img.error {
+        opacity: 1;
+      }
+
       img:not([src]) {
         visibility: hidden;
       }
