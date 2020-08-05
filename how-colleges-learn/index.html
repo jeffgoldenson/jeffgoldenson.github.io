@@ -6,7 +6,7 @@
 		<link rel="stylesheet" type="text/css" href="css/style.css" />
 	</head>
 <body>
-<figure><img src="making_space_edit2.png" loading="lazy"/></figure>
+<figure><img src="making_space_edit2.png"/></figure>
 
 <h1>How Colleges Learn</h1>
 
@@ -28,7 +28,7 @@
 <p>Almost no <del>buildings</del> <ins>colleges</ins> adapt well. They’re designed not to adapt; also budgeted and financed not to, constructed not to, maintained not to, regulated and taxed not to, even remodeled not to. But all <del>buildings</del> <ins>colleges</ins> (except monuments) adapt anyway, however poorly, because the usages in and around them are changing constantly. (Brand, pg.2)</p>
 </blockquote>
 
-<p> <div class="media-responsive"> <iframe src="https://giphy.com/embed/VgNX3xFr3eAWmSS5k8" width="480" height="270" frameBorder="0" class="giphy-embed" allowFullScreen></iframe></div></p>
+<p> <div class="media-responsive"> <iframe src="https://giphy.com/embed/VgNX3xFr3eAWmSS5k8" loading="lazy" width="480" height="270" frameBorder="0" class="giphy-embed" allowFullScreen></iframe></div></p>
 
 <p>Over the past five years, a group of staff, faculty, students and I have been working to leverage culture and community to change <a href="http://www.olin.edu/">Olin College of Engineering</a>. Olin is a small, project-based learning college, and for a number of us, college culture has become the project. If asked to articulate an animating speculation behind our work, we could do a lot worse than citing Brand:</p>
 
@@ -42,11 +42,11 @@
 
 <p>On Tuesday, March 10th at 4:06pm a long email titled “Olin COVID-19 Important Updates” arrived in the inbox of every staff, student and faculty member at Olin. It came from our founding President, Rick Miller, and was written to inform the community that “students should not plan to return to campus after spring break.” </p>
 
-<figure><img src="covid-19-2.jpg" loading="lazy"/></figure>
+<figure><img alt="email from Olin president Rick Miller about Covid-19" class="lazy" data-src="covid-19-2.jpg" loading="lazy"/></figure>
 
 <p>About an hour later, a brief message came across a very different channel, <code>carpediem@olin.edu </code> — Olin’s student-owned mailing list for last-minute, serendipitous opportunities. This one was titled “Group Scream on the great lawn 5:40 EOM”. (EOM = End of Message)</p>
 
-<figure><img src="group-scream-pixelate.jpg" loading="lazy"/></figure>
+<figure><img alt="email invitation from students for group scream" class="lazy" data-src="group-scream-pixelate.jpg" loading="lazy"/></figure>
 
 <p>By the time a few students and staff had gathered around a table the next morning, nothing was normal. We were in the Greenhouse, a small creative studio just inside the entrance to our academic building. In the Greenhouse, we grow young ideas, and some plants. Joining me were Susan Mihailidis, Director of Academic Affairs and Sponsored Programs; Robert Wechsler, Olin’s Artist in Residence; and a quartet of students: Matt Brucker ’20, Ana Krishnan ’20, Evan New-Schmidt ’20, and Sam Kaplan ’24. For these few students who had made it out of bed, emotions ran high. The feelings deserved airtime, and the best thing we could do as staff was to honor them by listening. </p>
 
@@ -335,6 +335,53 @@
 
 <p>See <a href="https://docs.google.com/document/d/1TwCx0L3QWBqe7A8cItprLpGQohrtpcFCN_pAeaFOqD4/edit?usp=sharing">Google Doc</a> to make comments</p>
 
+  	<script src="https://cdn.jsdelivr.net/npm/intersection-observer@0.7.0/intersection-observer.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/vanilla-lazyload@17.1.0/dist/lazyload.min.js"></script>
+    <script>
+      (function () {
+        function logElementEvent(eventName, element) {
+          console.log(Date.now(), eventName, element.getAttribute("data-src"));
+        }
+
+        var callback_enter = function (element) {
+          logElementEvent("🔑 ENTERED", element);
+        };
+        var callback_exit = function (element) {
+          logElementEvent("🚪 EXITED", element);
+        };
+        var callback_loading = function (element) {
+          logElementEvent("⌚ LOADING", element);
+        };
+        var callback_loaded = function (element) {
+          logElementEvent("👍 LOADED", element);
+        };
+        var callback_error = function (element) {
+          logElementEvent("💀 ERROR", element);
+          element.src = "https://via.placeholder.com/440x560/?text=Error+Placeholder";
+        };
+        var callback_finish = function () {
+          logElementEvent("✔️ FINISHED", document.documentElement);
+        };
+        var callback_cancel = function (element) {
+          logElementEvent("🔥 CANCEL", element);
+        };
+
+        var ll = new LazyLoad({
+          class_applied: "lz-applied",
+          class_loading: "lz-loading",
+          class_loaded: "lz-loaded",
+          class_error: "lz-error",
+          // Assign the callbacks defined above
+          callback_enter: callback_enter,
+          callback_exit: callback_exit,
+          callback_cancel: callback_cancel,
+          callback_loading: callback_loading,
+          callback_loaded: callback_loaded,
+          callback_error: callback_error,
+          callback_finish: callback_finish
+        });
+      })();
+    </script>
 </body>
 </html>
 
