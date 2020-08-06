@@ -105,6 +105,25 @@ img[src$=".jpg"]  {
 	border: 0px solid #ffb700;
 }
 
+/*/Lazy Loading Fade-in/*/
+img.lazy {
+        opacity: 0;
+      }
+      img:not(.initial) {
+        transition: opacity 1s;
+      }
+      
+      img.initial,
+      img.loaded,
+      img.error {
+        opacity: 1;
+      }
+
+      img:not([src]) {
+        visibility: hidden;
+      }
+
+
 video {
     max-width: 95%;
 	margin: 1em auto; 

@@ -108,8 +108,24 @@ video {
     border: 1px solid #ffb700;
 	border-radius: 3pt;
 }
-/*/
 
+/*/ for lazy loading javascript/*/
+img.lazy {
+        opacity: 0;
+      }
+      img:not(.initial) {
+        transition: opacity 1s;
+      }
+      img.initial,
+      img.loaded,
+      img.error {
+        opacity: 1;
+      }
+
+      img:not([src]) {
+        visibility: hidden;
+      }
+/*/
 p {
 	margin: 1.5em 0 1.5em;
 }
