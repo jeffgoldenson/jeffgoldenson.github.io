@@ -497,7 +497,14 @@ a:target {
 	ul,ol {
 		margin: 0;
 	}
-	
+	.media-responsive{
+    overflow:hidden;
+    padding-bottom:56.25%;
+    position:relative;
+    height:0;
+    margin:0 .5em; 
+}
+
 
 }
 
@@ -522,7 +529,7 @@ a:target {
     padding-bottom:56.25%;
     position:relative;
     height:0;
-    margin:0 .5em; 
+    margin:0; 
 }
 
 
