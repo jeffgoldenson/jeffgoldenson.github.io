@@ -630,4 +630,7 @@ div.jx-slider {
 	}
 
 }
-
+.splash-footer {
+	background: url(../../img/office_shelf.jpg);
+	width: auto;
+}
