@@ -1,5 +1,5 @@
    <!DOCTYPE html>
-  <html lang="en" class="bg-white ba bw3 bw4-ns b--white">
+  <html lang="en" class="bg-white ba bw3 bw4-ns b--white"">
     <head>
       <meta charset="utf-8">
       <meta http-equiv="X-UA-Compatible" content="IE=Edge">
@@ -13,7 +13,7 @@
       <link rel="stylesheet" href="css/tachyons.css">
       <link rel="stylesheet" type="text/css" href="css/buildingways.css">
     </head>
-    <body class="serif bg-near-white">
+    <body class="serif bg-near-white" onload="dayFunction()">
       <header class="splash-about sans-serif">
         <div class="tc center pa3 pt4 ph5-m ph7-l">
           
@@ -33,14 +33,13 @@
       <section class="tc center pa2 pa4-ns ph4-m ph7-l">    
         <a class="f5 f3-ns dim lh-copy ph2 pv1 br2 mr3 gray bg-yellow" href="index.html" title="index">index</a>
         <span class="f5 f3-ns dim lh-copy ph2 pv1 br2 mr3 white bg-orange" title="about">about</span>
-        <a class="f5 f3-ns dim lh-copy ph2 pv1 br2 mr3 gray bg-yellow" href="/notes/index.html" title="notes">notes</a>
       </section>
       
   
 
 
       <section class="center pa4 pt2 p3-ns ph5-m ph7-l">
-        <article class="">
+        <article class="mt3">
           
             <div class="flex flex-column flex-row-ns">
               <div class="pr3-ns mb4 mb0-ns w-100 w-40-ns">
@@ -48,11 +47,17 @@
               </div>
               <div class="w-100 w-60-ns pl3-ns">
   
-                <p class="f5 f3-ns lh-copy mv0 georgia">    
-                    My name's Jeff Goldenson. I'm a designer, educator and creative producer based in Cambridge, MA. 
+                <p class="f5 f3-ns measure lh-copy mv0 georgia">      
+                  Hello 🌍, it's <span id="day"></span>.
                 </p>
-                <br>
-                <p class="f5 f3-ns lh-copy mv0 georgia">    
+                <p class="f5 f3-ns measure lh-copy georgia">      
+                  buildingways is the work of Jeff Goldenson. I'm a designer, educator and creative producer based in Cambridge, MA. I love casting familiar things in new roles.
+                </p>
+                <p class="f5 f3-ns measure lh-copy georgia">      
+                  I empower folks of all ages and backgrounds to find new ways forward -- because it's fun for everyone. 
+                </p>
+                <p class="f5 f3-ns measure lh-copy georgia">  
+                
                     For more, see <a href="assets/jeffgoldenson_cv.pdf">c.v.</a> and <a href="assets/jeffgoldenson_portfolio.pdf">portfolio</a>.  
                 </p>
                <h1 class="f2-ns f3 measure-narrow lh-title  georgia">
@@ -62,42 +67,78 @@
         
                 </h1>
                 <ul>
-                <li>What can a Body Do, Sara Hendren</li>
-                <li>Sesame Street and the Reform of Children's Television, Morrow</li>  
-                <li>Explode Every Day</li>  
-                <li>Get Together</li>
-                <li>Notebooks, Lawrence</li>
-                <li>Turtles, Termites and Traffic Jams, Mitch Resnick</li>
-                <li>Computer Lib/Dream Machines, Ted Nelson</li>
-                <li>Expanded Cinema</li>
-                <li>Wabi-Sabi, Leonard Koren</li>
-                <li>Extrapolation Factory Operators Manual, Montgomery & Woebkin</li>
-                <li>Phenomenal: California Light, Space, Surface</li>
-                <li>The Further Adventures in Cardboard Carpentry</li>
-                <li>The Puffins Are Back, Gibbons</li>
-                <li>A Kid's Guide to Building Forts, </li>
-                <li>Archigram</li>
-                <li>How Buildings Learn, Stewart Brand</li>
-                <li>The Carpenter's Manifesto, Ehrlich and Mannheimer</li>
-                <li>The Serving Library Annual 2017/2018, Dexter Sinister</li>
-                <li>raumlaborberlin: acting in public, </li>
-                <li>Case: Toyo Ito | Sendai Mediatheque</li>
-                <li>The Interface: IBM and the Transformation of Corporate Design, 1945-1976</li>
-                <li>A Pattern Language, Christopher Alexander</li>
-                <li>Black Mountain: an indisciplinary experiment</li>
-                <li>Be Here Now, Ram Dass</li>
-                <li>Something Incredibly Wonderful Happens: Frank Oppenheimer and His Astonishing Exploratorium</li>
-                <li>Centre Pompidou, Francesco Dal Co</li>
-                <li>The Making of Beaubourg, Nate Silver</li>
-                <li>The Dynamic Library</li>
-                <li>Seeing is Forgetting the Name of the Thing One Sees, Lawrence Weschler</li>
-                <li>Wabi-Sabi: for Artists, Designers, Poets & Philosophers</li>
-                <li>Tools for Conviviality, Ivan Illich</li>
-                <li>The RSVP Cycles: Creative Process in the Human Environment</li>
-                <li>The Gift, Lewis Hyde</li>
-                <li>Lessons for Students in Architecture, Herman Hertzberger</li>
-                <li>Ant Farm: 1968-1976, Lewallen and Seid</li>
-                <li>Living Architecture 7: Ant Farm, Felicity Scott</li>
+                <li><a href="https://en.wikipedia.org/wiki/Whole_Earth_Catalog">The Last Whole Earth Catalog: Access to Tools</a>, Stewart Brand</li>
+
+                 
+                <li><a href="https://bookshop.org/books/what-can-a-body-do-how-we-meet-the-built-world/9780735220003">What can a Body Do?</a>, Sara Hendren</li>
+                
+                <li><a href="https://www.worldcat.org/title/sesame-street-and-the-reform-of-childrens-television/oclc/1024179693&referer=brief_results">Sesame Street and the Reform of Children's Television<span class="yellow">*</span></a>, Robert Morrow,  <span class="yellow">*</span>Though I recommend starting <a href="https://www.newyorker.com/magazine/2020/05/11/how-we-got-to-sesame-street">here</a> or <a href="https://www.worldcat.org/title/sunny-days-the-childrens-television-revolution-that-changed-america/oclc/1153078909&referer=brief_results">here</a></li>  
+                
+                <li><a href="https://www.worldcat.org/title/explode-every-day-an-inquiry-into-the-phenomena-of-wonder/oclc/1133661851&referer=brief_results"/>Explode Every Day</a>, Denise Markonish, from the <a href="https://massmoca.org/event/explode-every-day-an-inquiry-into-the-phenomena-of-wonder/">exhibit</a></li>  
+                
+                <li><a href="https://press.stripe.com/">Get Together</a>, Richardson; Huynh; Sotto</li>
+                
+                <li><a href="https://www.worldcat.org/title/lawrence-halprin-notebooks-1959-1971/oclc/8263243&referer=brief_results"/>Notebooks, 1959-1971</a>, Lawrence Halprin</li>
+                
+                <li><a href="https://www.worldcat.org/title/turtles-termites-and-traffic-jams-explorations-in-massively-parallel-microworlds/oclc/249411715&referer=brief_results"/>Turtles, Termites and Traffic Jams</a>, Mitchel Resnick</li>
+                
+                <li><a href="https://www.worldcat.org/title/computer-lib/oclc/799832140&referer=brief_results"/>Computer Lib/Dream Machines</a>, Theodor Nelson</li>
+                
+                <li><a href="https://www.worldcat.org/title/expanded-cinema/oclc/1153376598&referer=brief_results"/>Expanded Cinema</a><span class="yellow">*</span>, Gene Youngblood</li> <span class="yellow">*</span>haven't read
+                
+                <li><a href="https://bookshop.org/books/wabi-sabi-for-artists-designers-poets-philosophers/9780981484600"/>Wabi-Sabi</a>, Leonard Koren</li>
+                
+                <li><a href="https://www.worldcat.org/title/extrapolation-factory-operators-manual/oclc/983782538&referer=brief_results"/>Extrapolation Factory Operators Manual</a>, Montgomery; Woebkin</li>
+                
+                <li><a href="https://www.worldcat.org/title/phenomenal-california-light-space-surface-museum-of-contemporary-art-la-jolla-and-san-diego-from-september-25-2011-to-january-22-2012/oclc/843883010&referer=brief_results"/>Phenomenal: California Light, Space, Surface</a>, Clark; Davies; Auping</li>
+                
+                <li><a href="https://www.worldcat.org/title/further-adventures-of-cardboard-carpentry-son-of-cardboard-carpentry/oclc/2360341&referer=brief_results"/>The Further Adventures in Cardboard Carpentry</a>, Cope; Morrison</li>
+                
+                <li><a href="https://www.worldcat.org/title/puffins-are-back/oclc/38500869&referer=brief_results"/>The Puffins Are Back!</a>, Gail Gibbons</li>
+                
+                <li><a href="https://www.worldcat.org/title/kids-guide-to-building-forts/oclc/1089584739&referer=brief_results"/>A Kid's Guide to Building Forts</a>, Birdseye; Klein</li>
+                
+                <li><a href="https://www.worldcat.org/title/archigram/oclc/624534840&referer=brief_results"/>Archigram</a>, Alain Guiheux, Centre Georges Pompidou</li>
+                
+                <li><a href="https://bookshop.org/books/how-buildings-learn-what-happens-after-they-re-built/9780140139969"/>How Buildings Learn, Stewart Brand</a></li>
+                
+                <li><a href="https://www.worldcat.org/title/carpenters-manifesto/oclc/20690387&referer=brief_results"/>The Carpenter's Manifesto</a>, Ehrlich; Mannheimer</li>
+                
+                <li><a href="https://www.worldcat.org/title/serving-library-annual/oclc/1015372459&referer=brief_results"/>The Serving Library Annual 2017/2018</a>, Serving Library (Project)</li>
+                
+                <li><a href="https://www.worldcat.org/title/acting-in-public-raumlaborberlin-im-gesprach-conversations-with-raumlaborberlin/oclc/1126361463&referer=brief_results"/>raumlaborberlin: acting in public</a>, Maier; Raumlaborberlin</li>
+                
+                <li><a href="https://www.worldcat.org/title/case-toyo-ito-sendai-mediatheque/oclc/57143904&referer=brief_results"/>Case: Toyo Ito | Sendai Mediatheque</a>, Witte; Kobayashi</li>
+                
+                <li><a href="https://bookshop.org/books/the-interface-ibm-and-the-transformation-of-corporate-design-1945-1976/9780816674527"/>The Interface: IBM and the Transformation of Corporate Design, 1945-1976</a></li>
+                
+                <li><a href="https://bookshop.org/books/a-pattern-language-towns-buildings-construction/9780195019193"/>A Pattern Language, Christopher Alexander</a></li>
+                
+                <li><a href="https://www.mcnallyjackson.com/book/9783791355658"/>Black Mountain: an interdisciplinary experiment, 1933-1957</a>, Blume; Felix; Knapstein; Nichols</li>
+                
+                <li><a href="https://bookshop.org/books/be-here-now-9780517543054/9780517543054"/>Be Here Now</a>, Ram Dass</li>
+                
+                <li><a href="https://www.worldcat.org/title/something-incredibly-wonderful-happens-frank-oppenheimer-and-his-astonishing-exploratorium/oclc/930804633&referer=brief_results"/>Something Incredibly Wonderful Happens: Frank Oppenheimer and His Astonishing Exploratorium</a>, K C Cole</li>
+                
+                <li><a href="https://www.worldcat.org/title/centre-pompidou-renzo-piano-richard-rogers-and-the-making-of-a-modern-monument/oclc/1082538975&referer=brief_results"/>Centre Pompidou: Renzo Piano, Richard Rogers, and the making of a modern monument</a>, Francesco Dal Co</li>
+                
+                <li><a href="https://www.worldcat.org/title/making-of-beaubourg-a-building-biography-of-the-centre-pompidou-paris/oclc/59585294&referer=brief_results"/>The Making of Beaubourg: a building biography of the Centre Pompidou, Paris.</a>, Nathan Silver</li>
+                
+                <li><a href="https://soberscove.com/book/the-dynamic-library/"/>The Dynamic Library</a><, Roth; Schültz/li>
+                
+                <li><a href="https://bookshop.org/books/seeing-is-forgetting-the-name-of-the-thing-one-sees-over-thirty-years-of-conversations-with-robert-irwin-expanded/9780520256095"/>Seeing is Forgetting the Name of the Thing One Sees</a>, Lawrence Weschler</li>
+                
+                <li><a href="https://www.worldcat.org/title/tools-for-conviviality/oclc/1146586965&referer=brief_results"/>Tools for Conviviality</a>, Ivan Illich</li>
+                
+                <li><a href="https://www.mcnallyjackson.com/book/9783791355658"/>The RSVP Cycles: creative processes in the human environment</a>, Lawrence Halprin</li>
+                
+                <li><a href="https://bookshop.org/books/the-gift-how-the-creative-spirit-transforms-the-world/9781984897787"/>The Gift: How the Creative Spirit Transforms the World</a>, Lewis Hyde</li>
+                
+                <li><a href="https://bookshop.org/books/lessons-for-students-in-architecture/9789462083196"/>Lessons for Students in Architecture</a>, Herman Hertzberger</li>
+                
+                <li><a href="https://www.worldcat.org/title/ant-farm-1968-1978/oclc/928697768&referer=brief_results"/>Ant Farm: 1968-1976</a>, Lewallen and Seid</li>
+                
+                <li><a href="https://www.worldcat.org/title/living-archive-7-ant-farm-allegorical-time-warp-the-media-fallout-of-july-21-1969-plus-the-complete-ant-farm-timeline/oclc/179828037&referer=brief_results"/>Living Architecture 7: Ant Farm</a>, Felicity Scott</li>
 
               </div>
             </div>
