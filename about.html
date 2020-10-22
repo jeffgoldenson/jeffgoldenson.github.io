@@ -4,7 +4,7 @@
       <meta charset="utf-8">
       <meta http-equiv="X-UA-Compatible" content="IE=Edge">
       <title>
-        buildingways
+        buildwingways
       </title>
       <meta name="author" content="jeff goldenson, jeffrey goldenson, buildingways, buildingways.co, buildingways.com">
       <meta name="description" content="Learn how to engage communities and design community experiences to help Institutions, Schools, Colleges, Libraries learn grow and change">
@@ -14,6 +14,7 @@
       <link rel="stylesheet" type="text/css" href="css/buildingways.css">
     </head>
     <body class="serif bg-near-white" onload="dayFunction()">
+ 
       <header class="splash-about sans-serif">
         <div class="tc center pa3 pt4 ph5-m ph7-l">
           
@@ -46,10 +47,12 @@
               <div class="pr3-ns mb4 mb0-ns w-100 w-40-ns">
                 <img src="img/full-comp-72-vertical_small.jpg" class="db" alt="photo of my design and thinking bookshelf">
               </div>
+                          
+
               <div class="w-100 w-60-ns pl3-ns">
   
                 <p class="f5 f3-ns measure lh-copy mv0 georgia">      
-                  Hello 🌍, it's <span id="day" class="link"></span>.
+                  Hello <span class="ml0 dib" id="earth"></span>, it's <span id="day" class="link"></span>.
                 </p>
                 <p class="f5 f3-ns measure lh-copy georgia">      
                   buildingways is the work of Jeff Goldenson. I'm a designer, educator and creative producer based in Cambridge, MA. I try to cast familiar things in new roles.
@@ -192,7 +195,26 @@
         var n = weekday[d.getDay()];
         document.getElementById("day").innerHTML = n;
       }
+      
+
       </script>
+      <script type="text/javascript">
+                  "use strict";
+
+                  var index  = 0;
+                  var turning = ["🌏", "🌎", "🌍"];
+
+                  function display() {
+                    document.getElementById("earth").innerHTML = turning[index];
+                    index = (index + 1) % 3;
+                  }
+
+                  display();
+                  window.setInterval(display, 500);
+            </script>
+
+
+
 
     </body>
   </html>
