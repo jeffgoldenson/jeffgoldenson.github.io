@@ -231,6 +231,11 @@ blockquote {
 	width: auto;
 }
 
+.splash-scaff {
+	background: url(../img/remaking-skinny-bw.jpg);
+	width: auto;
+}
+
 .splash-about {
 	background: url(../img/vinalhaven.jpg);
 	width: auto;

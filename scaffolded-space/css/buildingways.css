@@ -93,7 +93,7 @@ figure {
 }
 
 figcaption {
-	font-size:     .875rem;
+	font-size:     1rem;
 	padding:       0.5em 1em;
 	margin-bottom: 2em;
 	color:	 #ff4136;
@@ -227,7 +227,22 @@ blockquote {
 }
 
 .splash {
-	background: url(../img/office.jpg);
+	background: url(../img/full-comp-72.jpg);
+	width: auto;
+}
+
+.splash-scaff {
+	background: url(../img/remaking-skinny-bw.jpg);
+	width: auto;
+}
+
+.splash-about {
+	background: url(../img/vinalhaven.jpg);
+	width: auto;
+}
+
+.splash-footer {
+	background: url(../img/office_shelf.jpg);
 	width: auto;
 }
 
@@ -442,6 +457,13 @@ pre {
 
 .syntax-list {
 	color: #e36209;
+}
+
+
+.bg-orange-gradient {
+  background: rgba(255,133,27,1);
+  background: -webkit-linear-gradient(top, rgba(255,133,27,1) 0%, rgba(255,80,27,1) 100%);
+  background: linear-gradient(to bottom, rgba(255,133,27,1) 0%, rgba(255,80,27,1) 100%);
 }
 
 

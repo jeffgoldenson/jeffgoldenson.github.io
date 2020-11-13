@@ -13,8 +13,9 @@
       <link rel="stylesheet" href="css/tachyons.css">
       <link rel="stylesheet" type="text/css" href="css/buildingways.css">
     </head>
-    <body class="serif bg-near-white">
-      <header class="splash sans-serif">
+    <body class="serif bg-near-white" onload="dayFunction()">
+ 
+      <header class="splash-about sans-serif">
         <div class="tc center pa3 pt4 ph5-m ph7-l">
           
           <h1 class="f-5-l f1-m f2 measure-narrow lh-title mv0 center">
@@ -30,123 +31,133 @@
           </h2> -->  
         </div>
       </header>
-       <section class="tc center pa2 pa4-ns ph4-m ph7-l">    
+      <section class="tc center pa2 pa4-ns ph4-m ph7-l">    
         <span class="f5 f3-ns dim lh-copy ph2 pv1 br2 mr3 white bg-orange" title="index">index</span>
-        <a class="f5 f3-ns dim lh-copy ph2 pv1 br2 mr3 gray bg-yellow" href="about.html" title="about">about</a>
+        <a class="f5 f3-ns dim lh-copy ph2 pv1 br2 mr3 gray bg-yellow" href="projects.html" title="projects">projects</a>
         <a class="f5 f3-ns dim lh-copy ph2 pv1 br2 mr3 gray bg-yellow" href="hello/index.html" title="collaborate">collaborate</a>
       </section>
       
-      <section class="center ph4 pt0 ph5-m ph7-l mt4">    
-        <article class="">
-          <span class="db ph3 ph0-l no-underline black" href="">
-            <h1 class="f3 f2-ns measure-narrow lh-title mv0 georgia">
-              <span class="bg-yellow lh-copy pa2 br2">
-                 scaffolded space
-              </span>
-            </h1>
-            <figure><img class="mt3 mb0" src="img/cport-screengrab-near-white.jpg"/></figure>
 
-            <p class="f5 f3-ns mt0 lh-copy georgia">
-              Broadening "the shoulders" of our schools with day-lit, super-sized awnings. 
-            </p>
-            <p class="f5 f3-ns mt0 lh-copy georgia">
-              <span class="gray i f5 f3-ns dib" href="#" title="About"><span class="lh-copy pa1 pt0 br2 mr3">more soon</span></span>
-            </p>
-          </span>
-        </article>
 
-        <article class="">
-          <span class="db pv4 ph3 ph0-l no-underline black" href="#0">
-            <div class="flex flex-column flex-row-ns">
-              <div class="pr3-ns mb4 mb0-ns w-100 w-40-ns">
-                <img src="img/overhead_postcards_small.jpg" class="db" alt="Photo of a dimly lit room with a computer interface terminal.">
-              </div>
-              <div class="w-100 w-60-ns pl3-ns">
-                <h1 class="f3 f2-ns measure-narrow measure-narrow lh-title mv0 georgia">
-                  <span class="bg-yellow lh-copy ph2 pv1 br2">
-                  postcard publishing
-                  </span>
-                </h1>
-                <p class="f5 f4-ns lh-copy">
-                  Strange and surprising mail is great! Exploring one-to-many postcard mailings for kid activists &amp;artist teachers.
-                <br>
-                
-              <span class="gray i pt3 f5 f4-ns dib" href="#" title="About"><span class="bg-light-grey lh-copy pa1 pt0 br2 mr3">more soon</span></span>
-            </p>
-              </div>
-            </div>
-          </span>
-        </article>
-        
-        <article class="">
-          <a class="db pv4 ph3 ph0-l no-underline black dim" href="../how-colleges-learn/index.html">
-            <div class="flex flex-column flex-row-ns">
-              <div class="pr3-ns mb4 mb0-ns w-100 w-40-ns">
-                <img src="img/how_buildings_learn_small.jpg" class="db" alt="Photo of a warehouse with stacked shelves.">
-              </div>
-              <div class="w-100 w-60-ns pl3-ns">
-                <h1 class="f3 f2-ns measure-narrow lh-title mv0 georgia bg-yellow ph2 pv1 br2">how <span class="red" style='text-decoration:line-through'><span style='color:black'>buildings</span></span> colleges learn</h1>
-                <p class="f5 f4-ns lh-copy">
-                  The intentional design of community experience to drive culture change 
-                  <br>
-                  <span class="gray f5 f4-ns pt3 dib" href="#" title="About"><span class="bg-yellow lh-copy pa1 pt0 br2 mr3">more</span></span>
-                </p>
-              </div>
-            </div>
-          </a>
-        </article>
-         <article class="">
-          <span class="db pv4 ph3 ph0-l no-underline black" href="#0">
-            <div class="flex flex-column flex-row-ns">
-              <div class="pr3-ns mb4 mb0-ns w-100 w-40-ns">
-                <img src="img/olin_library.jpg" class="db" alt="Photo of a warehouse with stacked shelves.">
-              </div>
-              <div class="w-100 w-60-ns pl3-ns">
-                <h1 class="f2-ns f3 measure-narrow lh-title mv0 georgia">
-                  <span class="bg-yellow lh-copy ph2 pv1 br2">
-                  The Library
-                  </span>
-                </h1>
-                <p class="f5 f4-ns lh-copy">
-                  Notes from running a different kind of Library at Olin College of Engineering.
-                <br>
-                <span class="gray i pt3 f5 f4-ns dib" href="#" title="About"><span class="lh-copy pa1 pt0 br2 mr3">more soon</span></span>
-                </p>
-               
-              </div>
-            </div>
-          </span>
-        </article>
-        <article class="">
-          <span class="db pv4 ph3 ph0-l no-underline black" href="#0">
-            <div class="flex flex-column flex-row-ns">
-              <div class="pr3-ns mb4 mb0-ns w-100 w-40-ns">
-                <img src="img/magic.jpg" class="db" alt="child with hand next to ocean-rounded granite stone with the words magic written around it">
-              </div>
-              <div class="w-100 w-60-ns pl3-ns">
-                <h1 class="f2-ns f3 measure-narrow lh-title mv0 georgia">
-                  <span class="bg-yellow lh-copy ph2 pv1 br2">
-                  making kid magic
-                  </span>
-                </h1>
-                <p class="f5 f4-ns lh-copy">
-                  An evolving Monday morning conversation with friends, colleagues and guests that share an interest in art, kids, design and action. 
-                </p>
-                <p class="f5 f4-ns lh-copy">
-                  Mondays, 9:15 - 10:30<br>
-                  <a href="https://meet.jit.si/makingkidmagic">https://meet.jit.si/<span class="orange">makingkidmagic</span></a>
 
-                
-              </div>
-            </div>
-          </span>
-        </article>
-      </section>
-      
-        
+      <section class="center pa4 pt2 p3-ns ph5-m ph7-l">
+        <article class="mt3">
           
+            <div class="flex flex-column flex-row-ns">
+              <div class="pr3-ns mb4 mb0-ns w-100 w-40-ns">
+                <img src="img/full-comp-72-vertical_small.jpg" class="db" alt="photo of my design and thinking bookshelf">
+              </div>
+                          
 
-      <footer class="splash">
+              <div class="w-100 w-60-ns pl3-ns">
+  
+                <p class="f5 f3-ns measure lh-copy mv0 georgia">      
+                  Hello <span class="ml0 dib" id="earth"></span>, it's <span id="day" class="link"></span>.
+                </p>
+                <br>
+                <p class="f5 f3-ns mt0 lh-copy georgia">  
+                  buildingways is a creative studio focusing on <del class="orange"><span class="black">the civic realm</span></del> Cambridge, MA. 
+                </p>
+                <p class="f5 f3-ns measure lh-copy georgia">      
+                  I'm Jeff Goldenson, a designer, educator and cultural producer. I work with young people to help them pilot the future.
+                </p>
+                
+                <p class="f5 f3-ns measure lh-copy georgia">  
+                
+                    For more, see <a href="assets/jeffgoldenson_cv.pdf">c.v.</a> and <a href="assets/jeffgoldenson_portfolio.pdf">portfolio</a>.  
+                    <br>
+                    jeffgoldenson<span class="black-60">@</span>gmail.com & 617.909.2917</p>
+
+                </p>
+               <h1 class="f2-ns f3 measure-narrow lh-title  georgia">
+                  <span class="bg-yellow lh-copy pa2 br2">
+                    bookshelf
+                  </span>
+        
+                </h1>
+                <ul>
+                <li><a href="https://en.wikipedia.org/wiki/Whole_Earth_Catalog">The Last Whole Earth Catalog: Access to Tools</a>, Stewart Brand</li>
+
+                 
+                <li><a href="https://bookshop.org/books/what-can-a-body-do-how-we-meet-the-built-world/9780735220003">What can a Body Do?</a>, Sara Hendren</li>
+                
+                <li><a href="https://www.worldcat.org/title/sesame-street-and-the-reform-of-childrens-television/oclc/1024179693&referer=brief_results">Sesame Street and the Reform of Children's Television<span class="yellow">*</span></a>, Robert Morrow,  <span class="yellow">*</span>I recommend starting <a href="https://www.newyorker.com/magazine/2020/05/11/how-we-got-to-sesame-street">here</a> or <a href="https://www.worldcat.org/title/sunny-days-the-childrens-television-revolution-that-changed-america/oclc/1153078909&referer=brief_results">here</a></li>  
+                
+                <li><a href="https://www.worldcat.org/title/explode-every-day-an-inquiry-into-the-phenomena-of-wonder/oclc/1133661851&referer=brief_results"/>Explode Every Day</a>, Denise Markonish, from the <a href="https://massmoca.org/event/explode-every-day-an-inquiry-into-the-phenomena-of-wonder/">exhibit</a></li>  
+                
+                <li><a href="https://press.stripe.com/">Get Together</a>, Richardson; Huynh; Sotto</li>
+                
+                <li><a href="https://www.worldcat.org/title/lawrence-halprin-notebooks-1959-1971/oclc/8263243&referer=brief_results"/>Notebooks, 1959-1971</a>, Lawrence Halprin</li>
+                
+                <li><a href="https://www.worldcat.org/title/turtles-termites-and-traffic-jams-explorations-in-massively-parallel-microworlds/oclc/249411715&referer=brief_results"/>Turtles, Termites and Traffic Jams</a>, Mitchel Resnick</li>
+                
+                <li><a href="https://www.worldcat.org/title/computer-lib/oclc/799832140&referer=brief_results"/>Computer Lib/Dream Machines</a>, Theodor Nelson</li>
+                
+                <li><a href="https://www.worldcat.org/title/expanded-cinema/oclc/1153376598&referer=brief_results"/>Expanded Cinema</a><span class="yellow">*</span>, Gene Youngblood</li> <span class="yellow">*</span>haven't read
+                
+                <li><a href="https://bookshop.org/books/wabi-sabi-for-artists-designers-poets-philosophers/9780981484600"/>Wabi-Sabi</a>, Leonard Koren</li>
+                
+                <li><a href="https://www.worldcat.org/title/extrapolation-factory-operators-manual/oclc/983782538&referer=brief_results"/>Extrapolation Factory Operators Manual</a>, Montgomery; Woebkin</li>
+                
+                <li><a href="https://www.worldcat.org/title/phenomenal-california-light-space-surface-museum-of-contemporary-art-la-jolla-and-san-diego-from-september-25-2011-to-january-22-2012/oclc/843883010&referer=brief_results"/>Phenomenal: California Light, Space, Surface</a>, Clark; Davies; Auping</li>
+                
+                <li><a href="https://www.worldcat.org/title/further-adventures-of-cardboard-carpentry-son-of-cardboard-carpentry/oclc/2360341&referer=brief_results"/>The Further Adventures in Cardboard Carpentry</a>, Cope; Morrison</li>
+                
+                <li><a href="https://www.worldcat.org/title/puffins-are-back/oclc/38500869&referer=brief_results"/>The Puffins Are Back!</a>, Gail Gibbons</li>
+                
+                <li><a href="https://www.worldcat.org/title/kids-guide-to-building-forts/oclc/1089584739&referer=brief_results"/>A Kid's Guide to Building Forts</a>, Birdseye; Klein</li>
+                
+                <li><a href="https://www.worldcat.org/title/archigram/oclc/624534840&referer=brief_results"/>Archigram</a>, Alain Guiheux, Centre Georges Pompidou</li>
+                
+                <li><a href="https://bookshop.org/books/how-buildings-learn-what-happens-after-they-re-built/9780140139969"/>How Buildings Learn, Stewart Brand</a></li>
+                
+                <li><a href="https://www.worldcat.org/title/carpenters-manifesto/oclc/20690387&referer=brief_results"/>The Carpenter's Manifesto</a>, Ehrlich; Mannheimer</li>
+                
+                <li><a href="https://www.worldcat.org/title/serving-library-annual/oclc/1015372459&referer=brief_results"/>The Serving Library Annual 2017/2018</a>, Serving Library (Project)</li>
+                
+                <li><a href="https://www.worldcat.org/title/acting-in-public-raumlaborberlin-im-gesprach-conversations-with-raumlaborberlin/oclc/1126361463&referer=brief_results"/>raumlaborberlin: acting in public</a>, Maier; Raumlaborberlin</li>
+                
+                <li><a href="https://www.worldcat.org/title/case-toyo-ito-sendai-mediatheque/oclc/57143904&referer=brief_results"/>Case: Toyo Ito | Sendai Mediatheque</a>, Witte; Kobayashi</li>
+                
+                <li><a href="https://bookshop.org/books/the-interface-ibm-and-the-transformation-of-corporate-design-1945-1976/9780816674527"/>The Interface: IBM and the Transformation of Corporate Design, 1945-1976</a>, John Harwood</li>
+                
+                <li><a href="https://bookshop.org/books/a-pattern-language-towns-buildings-construction/9780195019193"/>A Pattern Language, Christopher Alexander</a></li>
+                
+                <li><a href="https://www.mcnallyjackson.com/book/9783791355658"/>Black Mountain: an interdisciplinary experiment, 1933-1957</a>, Blume; Felix; Knapstein; Nichols</li>
+                
+                <li><a href="https://bookshop.org/books/be-here-now-9780517543054/9780517543054"/>Be Here Now</a>, Ram Dass</li>
+                
+                <li><a href="https://www.worldcat.org/title/something-incredibly-wonderful-happens-frank-oppenheimer-and-his-astonishing-exploratorium/oclc/930804633&referer=brief_results"/>Something Incredibly Wonderful Happens: Frank Oppenheimer and His Astonishing Exploratorium</a>, K C Cole</li>
+                
+                <li><a href="https://www.worldcat.org/title/centre-pompidou-renzo-piano-richard-rogers-and-the-making-of-a-modern-monument/oclc/1082538975&referer=brief_results"/>Centre Pompidou: Renzo Piano, Richard Rogers, and the making of a modern monument</a>, Francesco Dal Co</li>
+                
+                <li><a href="https://www.worldcat.org/title/making-of-beaubourg-a-building-biography-of-the-centre-pompidou-paris/oclc/59585294&referer=brief_results"/>The Making of Beaubourg: a building biography of the Centre Pompidou, Paris.</a>, Nathan Silver</li>
+                
+                <li><a href="https://soberscove.com/book/the-dynamic-library/"/>The Dynamic Library</a>, Roth; Schültz</li>
+                
+                <li><a href="https://bookshop.org/books/seeing-is-forgetting-the-name-of-the-thing-one-sees-over-thirty-years-of-conversations-with-robert-irwin-expanded/9780520256095"/>Seeing is Forgetting the Name of the Thing One Sees</a>, Lawrence Weschler</li>
+                
+                <li><a href="https://www.worldcat.org/title/tools-for-conviviality/oclc/1146586965&referer=brief_results"/>Tools for Conviviality</a>, Ivan Illich</li>
+                
+                <li><a href="https://www.mcnallyjackson.com/book/9783791355658"/>The RSVP Cycles: creative processes in the human environment</a>, Lawrence Halprin</li>
+                
+                <li><a href="https://www.worldcat.org/title/experience-of-nature-a-psychological-perspective/oclc/18814094"/>The The Experience of Nature: a psychological perspective</a>, Kaplan; Kaplan, dig into <a href="https://willsull.net/resources/KaplanS1995.pdf">this paper</a> and "soft fascination"</li>
+                
+                <li><a href="https://bookshop.org/books/the-gift-how-the-creative-spirit-transforms-the-world/9781984897787"/>The Gift: How the Creative Spirit Transforms the World</a>, Lewis Hyde</li>
+                
+                <li><a href="https://bookshop.org/books/lessons-for-students-in-architecture/9789462083196"/>Lessons for Students in Architecture</a>, Herman Hertzberger</li>
+                
+                <li><a href="https://www.worldcat.org/title/ant-farm-1968-1978/oclc/928697768&referer=brief_results"/>Ant Farm: 1968-1976</a>, Lewallen and Seid</li>
+                
+                <li><a href="https://www.worldcat.org/title/living-archive-7-ant-farm-allegorical-time-warp-the-media-fallout-of-july-21-1969-plus-the-complete-ant-farm-timeline/oclc/179828037&referer=brief_results"/>Living Architecture 7: Ant Farm</a>, Felicity Scott</li>
+
+              </div>
+            </div>
+         
+        </article>
+        
+      </section>
+            <footer class="splash">
         <div class="ph4 mw16 center pa4 ph5-m ph7-l">
         <style type="text/css">
             #mc_embed_signup{clear:left; font:16px georgia,sans-serif; width:100%;}
@@ -174,11 +185,44 @@
 
           <time class="pt f5 f3-ns lh-copy measure white sans-serif"><span class="b">buildingways</span> Cambridge, MA <span class="black-60">|</span> 
             <a href = "mailto: jeffgoldenson@gmail.com"><span class="white">jeffgoldenson<span class="white">@</span>gmail.com</time></a>
-        
+      </div>  
       </footer>
-<!-- Here's the lazy load code, AKA vanilla-lazyload, courtesy of https://www.andreaverlicchi.eu/vanilla-lazyload/, thanks much! -->  
+      <script>
+        function dayFunction() {
+        var d = new Date();
+        var weekday = new Array(7);
+        weekday[0] = "Sunday";
+        weekday[1] = "Monday";
+        weekday[2] = "Tuesday";
+        weekday[3] = "Wednesday";
+        weekday[4] = "Thursday";
+        weekday[5] = "Friday";
+        weekday[6] = "Saturday";
+
+        var n = weekday[d.getDay()];
+        document.getElementById("day").innerHTML = n;
+      }
       
+
+      </script>
+      <script type="text/javascript">
+                  "use strict";
+
+                  var index  = 0;
+                  var turning = ["🌏", "🌎", "🌍"];
+
+                  function display() {
+                    document.getElementById("earth").innerHTML = turning[index];
+                    index = (index + 1) % 3;
+                  }
+
+                  display();
+                  window.setInterval(display, 500);
+            </script>
+
+
 
 
     </body>
   </html>
+
