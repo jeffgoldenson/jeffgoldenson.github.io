@@ -1,0 +1,348 @@
+<!doctype>
+<html>
+<head>
+	<title>Library License</title>
+
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />	
+	<link rel="stylesheet" href="css/TangleKit.css" type="text/css">
+    <link href="bootstrap/css/bootstrap.css" rel="stylesheet">
+     <link href="bootstrap/css/bootstrap-responsive.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <link href="css/typeplate.css" rel="stylesheet">
+	<link href='http://fonts.googleapis.com/css?family=PT+Serif' rel='stylesheet' type='text/css'>
+	
+	<script type="text/javascript" src="js/jquery/jquery-1.7.1.min.js"></script>
+	<script type="text/javascript" src="js/jquery/jquery-ui-1.8.17.custom.min.js"></script>
+	<script type="text/javascript" src="js/jspdf.js"></script>
+	<script type="text/javascript" src="libs/FileSaver.js/FileSaver.js"></script>
+	<script type="text/javascript" src="libs/BlobBuilder.js/BlobBuilder.js"></script>
+	<script type="text/javascript" src="js/jspdf.plugin.addimage.js"></script>
+	<script type="text/javascript" src="js/jspdf.plugin.standard_fonts_metrics.js"></script>
+	<script type="text/javascript" src="js/jspdf.plugin.split_text_to_size.js"></script>
+	<script type="text/javascript" src="js/jspdf.plugin.from_html.js"></script>
+	<script type="text/javascript" src="js/basic.js"></script>
+	
+	
+	<script type="text/javascript" src="js/Tangle.js"></script>
+	<script type="text/javascript" src="js/TangleKit/mootools.js"></script>
+	<script type="text/javascript" src="js/TangleKit/sprintf.js"></script>
+	<script type="text/javascript" src="js/TangleKit/BVTouchable.js"></script>
+	<script type="text/javascript" src="js/TangleKit/TangleKit.js"></script>
+	
+	<script type="text/javascript">
+
+		function setUpTangle () {
+
+			var element = document.getElementById("active");
+
+			var tangle = new Tangle(element, {
+				initialize: function () {
+					this.years = 5;
+					this.months = 3;
+					this.views = 5;
+					this.copies = 5;
+				},
+				update: function () {
+				}
+			});
+			
+			
+		}
+		
+
+	</script>
+	<script type="text/javascript">
+	$(document).ready(function() {
+  // Handler for .ready() called.
+		setUpTangle();
+		
+		$("#active").on("mouseenter", ".years", function(event){
+			$(".years-variable").removeClass("un-highlight").addClass("highlight");
+		});
+		$("#active").on("mouseleave", ".years", function(event){
+			$(".years-variable").removeClass("highlight").addClass("un-highlight");
+		});
+		
+
+		$("#active").on("mouseleave", ".copies", function(event){
+			$(".sales-count").removeClass("highlight").addClass("un-highlight");
+		});
+		
+		$("#active").on("mouseenter", ".copies", function(event){
+			$(".sales-count").removeClass("un-highlight").addClass("highlight");
+		});
+
+		
+		$("#active").on("mouseleave", ".months", function(event){
+			$(".consecutive-months").removeClass("highlight").addClass("un-highlight");
+		});
+		
+		$("#active").on("mouseenter", ".months", function(event){
+			$(".consecutive-months").removeClass("un-highlight").addClass("highlight");
+		});
+		
+		
+		
+				$("#active").on("mouseleave", ".views", function(event){
+			$(".online-views").removeClass("highlight").addClass("un-highlight");
+		});
+		
+		$("#active").on("mouseenter", ".views", function(event){
+			$(".online-views").removeClass("un-highlight").addClass("highlight");
+		});
+		
+		
+		$(".author-input").keyup(function(){
+			var author = $(this).val(); 
+			$(".author").text(author);
+		});
+		
+		$(".publisher-input").keyup(function(){
+			var publisher = $(this).val(); 
+			$(".publisher").text(publisher);
+		});
+		
+		$(".intermediary-input").keyup(function(){
+			var intermediary = $(this).val(); 
+			$(".intermediary").text(intermediary);
+		});
+		
+		
+		$(".controls").on("mouseenter", ".author-input", function(event){
+			$(".author").removeClass("un-highlight");
+			$(".author").addClass("highlight");
+		});
+		
+		$(".controls").on("mouseleave", ".author-input", function(event){
+			$(".author").removeClass("highlight");
+			$(".author").addClass("un-highlight");
+		});
+		
+		$(".controls").on("mouseenter", ".publisher-input", function(event){
+			$(".publisher").removeClass("un-highlight");
+			$(".publisher").addClass("highlight");
+		});
+		$(".controls").on("mouseleave", ".publisher-input", function(event){
+			$(".publisher").removeClass("highlight");
+			$(".publisher").addClass("un-highlight");
+		});
+		
+		$(".controls").on("mouseenter", ".intermediary-input", function(event){
+			$(".intermediary").removeClass("un-highlight");
+			$(".intermediary").addClass("highlight");
+		});
+		$(".controls").on("mouseleave", ".intermediary-input", function(event){
+			$(".intermediary").removeClass("highlight");
+			$(".intermediary").addClass("un-highlight");
+		});
+		
+	
+		
+		//Insert today's date
+		var months = ['January','February','March','April','May','June','July',
+		'August','September','October','November','December'];       
+		var today = new Date();
+		today.setTime(today.getTime());       
+		document.getElementById("spanDate").innerHTML = months[today.getMonth()] + " " + today.getDate()+ ", " + today.getFullYear();
+		
+			$(".cc-select").on("change", function(){
+			var cc = $(this).val(); 
+			if(cc !== "None") {
+				var cctext = $("#cc-option-text").html();
+				$("#cc-option").html(cctext);
+				$("#cc-option-type").text(cc);
+			}
+			else {
+				$("#cc-option").html("");
+			}
+		});
+		
+	});
+	
+	</script>
+
+</head>
+
+<body onload="">
+
+
+<div class="container" id="active">
+
+<div class="masthead">
+        <div class="navbar">
+          <div class="navbar-inner">
+            <div class="container">
+              <ul class="nav">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li class="active"><a href="design.html">Design your License</a></li>
+              </ul>
+            </div>
+          </div>
+        </div><!-- /.navbar -->
+      </div>
+
+  		
+		
+    	<div class="row">
+    		<br/>
+    		<div class="span4 column controls sidebar-nav-fixed">
+				<h3>Define the Terms</h3>
+				<form>
+					Publisher Name
+					<input type="text" class="publisher-input input-field">
+					Author Name
+					<input type="text" class="author-input input-field">	
+					Intermediary Name
+					<input type="text" class="intermediary-input input-field">	
+				</form>
+				<p><span class="orange">Mouseover or touch the dashed variables to adjust</span></p>
+				
+				<p><span data-var="years" class="TKAdjustableNumber years" data-min="1" data-max="20"> years</span>  until LL triggered <em>(see 1.3.1)</em></p>
+				<p><span data-var="copies" class="TKAdjustableNumber copies" data-min="0" data-max="100"> copies sold</span> per month <em>(see 1.3.2)</em></p>
+				<p><span data-var="views" class="TKAdjustableNumber views" data-min="0" data-max="300"> online views</span> per month <em>(see 1.3.6)</em></p>	
+				<p><span data-var="months" class="TKAdjustableNumber months" data-min="3" data-max="24"> month</span> measurement period <em>(see 1.3.2 &amp; 1.3.6)</em></p>
+				
+				<div class="divider center">----- optional -----</div>
+
+				Do you want to enable sharing and use of your work with the public, on
+conditions you choose, via <a href="http://creativecommons.org/">Creative Commons license?</a> <span class="orange">(optional section 2.3.2)</span>
+				<select class="cc-select">
+					<option>None</option>
+  					<option>Creative Commons Attribution (CC BY)</option>
+  					<option>Creative Commons Attribution-ShareAlike (CC BY-SA)</option>
+  					<option>Creative Commons Attribution-NoDerivs (CC BY-ND)</option>
+  					<option>Creative Commons Attribution Non-Commercial (CC BY-NC)</option>
+  					<option>Creative Commons Attribution-NonCommercial-ShareAlike (CC BY-NC-SA)</option>
+  					<option>Creative Commons Attribution-NonCommercial-NoDerivs (CC BY-NC-ND)</option>
+				</select>
+				
+				
+				
+				
+				<a href="javascript:demoFromHTML()" class="btn center">Download PDF</a>
+					<p class="center warning">Chrome &amp; Safari only</p>
+			
+
+			</div>
+			
+			<div class="offset4 span8">
+				<div class="contract column">
+					<div id="page1">
+						<h2 class="center"><span class="draft">DRAFT</span> Library License <span class="draft">DRAFT</span></h2>
+						
+						<p>This Rider (the &quot;Rider&quot;) is hereby entered into by and between <span class="publisher">[&nbsp;&nbsp;&nbsp;&nbsp;]</span> (&quot;Publisher&quot;) and <span class="author">[&nbsp;&nbsp;&nbsp;&nbsp;]</span> (&quot;Author&quot;) on <span id="spanDate">[TODAY DATE]</span> (the &quot;Rider Effective Date&quot;), and hereby modifies the terms of the publishing agreement entered into by the parties on [DATE OF PUBLISHING AGREEMENT] (the &quot;Publishing Agreement&quot;). The parties hereby agree to incorporate the terms of this Rider into the Publishing Agreement. To the extent there is any conflict between terms set forth in this Rider and terms set forth in the Publishing Agreement, the terms of this Rider shall control.</p>
+					
+					
+							<h4>1 Definitions</h4>
+					
+						
+						<p><span class="number">1.1</span> &quot;Intermediary&quot; means any of the following organizations, as agreed upon by the Author and Publisher: <span class="intermediary"> [&nbsp;&nbsp;&nbsp;&nbsp;]</span>.</p>
+						
+						<p><span class="number">1.2</span> &quot;Library&quot; means any public library or branch thereof or any library affiliated with a public or private educational institution for higher learning.</p>
+						<p>
+							<span class="number">1.3</span> &quot;Triggering Event&quot; means the occurrence of any one of the following:
+						</p>
+						<p>
+							<span class="number">1.3.1</span> the later of the <span class="years-variable" data-var="years"> year </span>anniversary of the effective date of the Publishing Agreement or <span class="years-variable" data-var="years"> year </span> anniversary of the date on which the Work is first published;
+							
+						<p>
+							<span class="number">1.3.2</span> Publisher&apos;s failure to sell more than <span class="sales-count" data-var="copies"> copies</span> of the Work per month for <span class="consecutive-months" data-var="months"> consecutive months</span>;
+						</p>	
+						<p>
+							<span class="number">1.3.3</span> Publisher&apos;s ceasing to print new physical copies of the Work for general distribution, regardless of whether Publisher continues to make the Work available via print on demand or in digital format;
+						</p>
+						<p>		
+							<span class="number">1.3.4</span> publication of a substantially new edition of the Work; 
+						<p/>
+						<p>		
+							<span class="number">1.3.5</span> the Work is unavailable in any of the formats specified in the Publishing Agreement; or
+						<p/>
+						<p>		
+							<span class="number">1.3.6</span> the Work has been viewed online through paid subscription services fewer than <span class="online-views" data-var="views"> times per month</span> [in the UNITED STATES] for <span class="consecutive-months" data-var="months"> consecutive months</span>.
+						<p/>
+						<p>
+							<span class="number">1.4</span> &quot;Technological Protection Measure&quot; means standard digital rights management technology available as of the date of the Triggering Event intended to help the Library comply with the restrictions set forth in [SECTIONS 1.2.1 and 1.2.2]
+						</p>
+						<p>
+							<span class="number">1.5</span> &quot;Work&quot; or &quot;Works&quot; means any work covered by the terms of the Publishing Agreement.
+						</p>
+					</div><!--Page 1-->
+					
+					<div id="page2">
+						
+						<h4>2 Library License</h4>
+						
+						
+						<p>
+							<span class="number">2.1</span>  Upon the occurrence of a Triggering Event, Publisher and Author agree to: 
+						</p>
+						<p>
+							<span class="number">2.1.1</span> provide one (1) digital copy of the Work at no charge to each Library in a format that will enable each Library to exercise the rights described in Section 2.1.2 below; and
+						</p>
+						<p>
+							<span class="number">2.1.2</span> automatically grant each Library and Intermediary a perpetual, irrevocable, non- exclusive, royalty-free, fully paid up right and license to copy and reformat the Work as necessary to maintain and distribute the Library&apos;s digital copy of the Work and to distribute digital copies of the Work on a temporary basis to the Library&apos;s members within <em>[COUNTRY VARIABLE]</em>, subject to the following requirements:
+						</p>
+						<p>
+							<span class="number">2.1.2.1</span> each Library may only distribute one (1) copy of the Work, at a time, so that only one (1) Library patron may have access to the Work at any given time;
+						</p>
+						<p>
+							<span class="number">2.1.2.2</span> each Library must limit the amount of time an individual patron has access to the copy pursuant to the Library&apos;s standard lending policies; and
+						</p>
+						<p>
+							<span class="number">2.1.2.3</span> each Library must limit the amount of time an individual patron has access to the copy pursuant to the Library&apos;s standard lending policies; and
+						</p>
+						<p>
+							<span class="number">2.2</span> Upon the occurrence of a Triggering Event, either Author or Publisher will notify each <span class="intermediary">[&nbsp;&nbsp;&nbsp;&nbsp;]</span> that the rights set forth in Section 2.1 above are granted to the Libraries, and Publisher will deliver a digital copy of the Work to each Library and the <span class="intermediary"> [&nbsp;&nbsp;&nbsp;&nbsp;]</span> in accordance with Section 2.1.
+						</p>
+						<p id="cc-option"></p>
+						<h4>3 Fair Use and Fair Dealing</h4>
+						
+						
+						<p>
+							<span class="number">3.1</span> None of the licenses granted under this rider shall be interpreted to limit any right or license granted to Publisher under the Publishing Agreement, though Publisher acknowledges that certain rights may no longer be exclusive to Publisher to the extent those rights are granted to others pursuant to the terms of this Rider.
+						</p>
+						<p>
+							<span class="number">3.2</span>	Author and Publisher take no position in this document as to whether the Libraries, or any other party that is granted a license to a Work under this Rider, would have any rights to use the Work under fair use or other related doctrines absent the licenses granted under this Rider.  Nothing in this Rider is intended to reduce, limit, or restrict any rights individuals or entities may have to use any Works covered by this Rider without a license or other consent pursuant to copyright law or other applicable laws.
+						</p>
+					</div><!--page2-->
+				</div><!--contract-->
+			</div><!--span6-->
+    	</div><!--row-->
+
+    	
+      
+    	<footer>
+      		<div class="row">
+      			<div class="span6">
+      				<a href="http://librarylab.law.harvard.edu/"><img class="stamp" src="img/liblabstamp.png"/></a><a href="http://cyber.law.harvard.edu/"><img class="berk-stamp" src="img/berkman.png"/></a>
+        		</div>
+        		<div class="span6">
+        			<p>Copyright &copy; 2012 The President and Fellows of Harvard College<br><a href="http://creativecommons.org/licenses/by-sa/3.0/">Creative Commons Attribution-ShareAlike 3.0 Unported License</a><br>Special Thanks <a href="http://librarylab.law.harvard.edu/about.html">Annie Cain</a> &amp; <a href="https://twitter.com/MaxUhl">Max Uhlenhuth</a></p>
+      			</div>
+      		</div><!--row-->
+      		<div class="row">	
+      		<div class="span12">
+      			<h4 class="center smaller arcadia">with generous support from the <a href="http://osc.hul.harvard.edu/liblab">Harvard Library Lab</a> on behalf of the <a href="http://www.arcadiafund.org.uk/">Arcadia Fund</a></h4>
+      		</div>
+      	</div>
+      	</footer>
+    </div><!--container-->
+    <div style="display:none;" id="cc-option-text">
+    	<p><span class="number">2.3</span>	[Optional Section In addition to the license granted in Section 2, upon the occurrence of a Triggering Event, Publisher and Author agree to make the Work available under the following license: <span id="cc-option-type"></span>.  Upon the occurrence of a Triggering Event, either Publisher or author shall notify each Intermediary that the rights set forth in this Section 2.3 have been triggered and granted to the public.]</p>
+    </div>
+    <script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-27967578-2']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+</body>
+</html>

@@ -1,0 +1,178 @@
+@charset "utf-8";
+/* CSS Document */
+
+/* GENERAL */
+
+html, body {
+  background-color: #eee;
+  text-align: center;
+  margin: 0px 0px 0px 0px;
+  padding: 0px 0px 0px 0px;
+  }
+
+body {
+  padding-top:10px;
+  font-family:Helvetica, sans-serif;
+  font-size: 13px;
+  line-height: 1.5em;
+  }
+
+#container {
+  float: none;
+  width: 432px;
+  background-color: #FeFeFe;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0 20px 20px 20px;
+  text-align: left;
+  height:auto;
+  border:1px solid #ccc;
+}
+
+h1 {
+  font-size: 32px;
+  font-style: normal;
+  font-weight: bold;
+  color:#090;
+  padding: 0px;
+  margin: 0px 0px 10px 0px;
+}
+
+h2 {
+  font-size: 16px;
+  color:#333;
+  text-decoration: none;
+  font-style: normal;
+  font-weight: bold;
+  padding: 0px;
+  margin: 0px 0px 19px 0px;
+}
+
+h3 {
+  font-size: 18px;
+  font-style: normal;
+  font-weight: normal;
+  color:#FFFFFF;
+  padding: 0px;
+  margin: 0px 0px 16px 0px;
+}
+
+h4 {
+  font-size: 14;
+  font-style: normal;
+  font-weight: normal;
+  padding: 0px;
+  margin: 0px 0px 16px 0px;
+}
+
+
+.tagline {
+  font-size: 14px;
+  color: #777;
+  margin-left: 3px;
+}
+
+a {
+  color: #000000;
+}
+
+a:link {
+  color: #000000;
+}
+
+a:visited {
+  color: #000000;
+}
+
+a:active {
+  color: #000000;
+  background: #FFFFFF;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #000000;
+  border
+  text-decoration: none;
+}
+
+span.black {
+	color:#000000;
+}
+/* TEMPLATE TOP */
+
+#header {
+  margin-top:10px;
+  padding-left: 20px;
+  padding-top: 18px;
+  padding-bottom: 10px; 
+  border-bottom: 1px dashed #CCCCCC;
+}
+
+#headerlogo {
+  margin-right: 0px;
+}
+
+#headerlogo h1 {
+  display: inline;
+}
+
+#headerlogo img.logoline {
+  display: inline;
+  margin-right: 18px;
+  margin-left: 18px;
+}
+
+#headerlogo .tagline {
+  display: inline;
+  position: relative;
+  top: 0px;
+}
+  
+
+.opening1 {
+  float: left;
+  width: 410px;
+  margin-top: 0px;
+  margin-left:15px;
+  margin-bottom: 5px;
+}
+
+
+#videoBox { 
+  padding:5px;
+  width:402px;
+  border: 1px solid #CCC;
+  margin: 0 10px 0 10px; 
+}
+  
+#player1{
+  border: 1px solid #aaa;
+  width:400px;
+} 
+  
+.clear {
+    clear:both;
+} 
+
+.attribution {
+    color:#666;
+} 
+
+.watch {
+    font-weight:normal;
+    color:#090;
+    margin-left:15px;
+} 
+
+.liblink a{
+    color:#09F;
+} 
+
+a.green {
+	color:#090;
+}
+
+#footer{
+
+} 

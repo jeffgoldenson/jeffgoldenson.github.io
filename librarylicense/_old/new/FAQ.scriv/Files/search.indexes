@@ -1,0 +1,387 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<SearchIndexes Version="1.0">
+    <Documents>
+        <Document ID="19">
+            <Title>Governing Body</Title>
+            <Text>Who manages the Library License?
+At this stage, without sufficient market feedback on the interest and viability of the concept, we have not identified a governing body who will look after the license and/or host and serve library licensed works to libraries across the US.  
+
+We find deep resonance with the Digital Public Library of America and see them and others as possible entities to approach.  </Text>
+        </Document>
+        <Document ID="15">
+            <Title>Front of Catalog or Back of Catalog?</Title>
+            <Text>Front of Catalog or Back of Catalog?
+Library License is seen as a flexible instrument.    
+
+Does this apply only to works in the contracts stage?
+Hopefully not, depending on uptake perhaps discussions may be able to happen over time to explore Library Licensing, older, “back of catalog” works.  
+
+</Text>
+        </Document>
+        <Document ID="3">
+            <Title>What is Library License?</Title>
+        </Document>
+        <Document ID="11">
+            <Title>What are the thresholds?</Title>
+            <Text>What are the thresholds?
+The threshold can be whatever the author and publisher agree to. Typically, they specify within the following parameters: 
+1	Sales: The number of copies being sold has slowed to a specified trickle.
+2	Time: A specified amount of time has passed.
+3	Obsolescence: A substantially new edition has come out, or, possibly, a second new edition has come out.
+4	Event: A print book goes out of print.
+</Text>
+        </Document>
+        <Document ID="16">
+            <Title>Do Authors Want it?</Title>
+            <Text>Do authors want Library License?
+That’s where you come in.  We don’t know.  Do you?  </Text>
+        </Document>
+        <Document ID="4">
+            <Title>LibraryLicenseJan.2013</Title>
+            <Text>Library License (LL)
+Jeff Goldenson, David Weinberger
+Harvard Library Innovation Lab
+
+Dalia Topelson, David O’Brien, Christopher Bavitz
+The Berkman Center for Internet &amp; Society, Harvard University
+
+January, 2013
+
+What is Library License?
+The Library License is an effort to create a space in the digital world where works, still under copyright, may be securely made available to the public. 
+
+The Library License is a model agreement between an author and her/his publisher that after a work has passed a specified threshold – sales have dropped below a certain level, a substantially new edition has come out, or a certain number of years have passed, etc. – every public and school library will be allowed to distribute one electronic copy of that work through the library’s usual digital distribution system.
+
+Why?
+The Library License is envisioned as a means of ensuring that libraries have access to old and new digital content in a way that complements publishers’ and authors’ rights in the content they create. 
+
+Inserting Library License into the existing Copyright Timeline
+
+
+Works languish in copyright long after significant market interest subsides.  Why not make one digital edition, with appropriate DRM practices, available from each library?  
+
+
+Passing the threshold means that there is a significantly diminished commercial market for the work, so making one copy available at a time for the users of a library does no harm, but can bring important benefits:
+
+1	The work is archived in public, keeping it accessible to the occasional user who wants it.
+2	The work might help build demand for other works by the author.
+3	Because the digital copy is released with restrictions on the number of simultaneous copies, the length of the lending period, and (potentially) the inability to print selections, it might drive incremental demand for copies printed on-demand by the publisher.
+
+What are the thresholds?
+The threshold can be whatever the author and publisher agree to. Typically, they specify within the following parameters: 
+1	Sales: The number of copies being sold has slowed to a specified trickle.
+2	Time: A specified amount of time has passed.
+3	Obsolescence: A substantially new edition has come out, or, possibly, a second new edition has come out.
+4	Event: A print book goes out of print.
+
+What about DRM?
+The License requires libraries to make a copy available through whatever digital distribution system they use. Those systems provide some level of digital rights management.  
+
+What counts as a library?
+A library is a branch of a public library or library within an educational system. We are working on specifying this in more detail.  
+
+Are Library Licensed works copyright-free?
+Not at all. The author and/or publisher retain the copyright on the work. Libraries are merely given the right to distribute that copyrighted work.
+
+
+
+
+
+
+
+Distribution
+                                          
+
+Library Licensed works remain copyright protected and available for purchase.
+
+
+
+
+
+DRAFT LEGAL LANGUAGE
+
+LIBRARY LICENSE MISSION STATEMENT
+
+The Library License is an effort to create a space in the digital world where works, still under copyright, may be securely made available to the public.  
+
+Libraries:  Background and Function
+
+Libraries have historically provided access to repositories of knowledge, preserving information in the form of books, periodicals, and more.  Libraries have historically done this by acquiring and preserving books.  Libraries acquire books from publishers or secondary markets, make the books accessible to patrons within their buildings, and loan the books to their members under the “first-sale doctrine” and other exemptions to the copyright laws in the United States.  Public libraries also serve a second and related set of purposes, including acting as community centers, imbuing patrons with a love of reading, and curating catalogs to promote relevant works to interested readers.  
+
+Libraries:  Historical Challenges
+
+Libraries have always faced significant challenges in fulfilling these roles – particularly in the roles of archivist and preservationist.  Those challenges include financial and physical space constraints associated with acquiring and maintaining new works.  Such constraints force libraries to limit acquisitions and purge collections, leading to incomplete catalogs.  Once books go out of print, works become even less available, making it even more difficult for libraries to identify, locate, and acquire older works that are relevant to their patrons. 
+
+Libraries and Digitization:  The Promise
+
+The era of digitization and ebooks is one of extraordinary promise for authors, publishers, libraries, and readers alike.  Digital distribution promises lower book costs given the elimination of expenses associated with physical printing and the moving of physical editions.  And, the ability to store works digitally will alleviate some of libraries’ concerns about maintenance of physical repositories.
+
+Libraries and Digitization:  Risks and Perils
+
+Digitization presents a number of challenges for libraries as well.  While publishers may keep books “in print” digitally longer than they might have in physical formats, given the relatively limited incremental costs associated with maintaining less popular works in their digital catalogs, they might be less willing to make digital editions available to libraries to prevent cannibalization of potential long-tail revenues.  Also, the law is unsettled as to whether the limitations in the Copyright Act would enable libraries to distribute digital files without permission, creating a risk that libraries may be sanctioned for emulating the physical distribution model in the digital realm.  Even if libraries are able to work out arrangements with publishers to secure digital works (or digitize and distribute works available in print format), libraries may not be able to identify the original authors or other rights holders of orphan works.
+
+The Library License
+
+The Library License Project, based at Harvard and proceeding with support from the Harvard Library Lab, the Harvard Library Innovation Lab, and the Berkman Center for Internet &amp; Society, seeks to ensure that libraries are able to maintain significant collections of digital works and make those works available to library patrons using Library License.  
+
+Library License is a clause for authors and publishers to insert in publishing contracts that makes works available online through libraries while still under copyright but after sales have dropped below a trigger point.  The Library License allows the author and publisher to agree on the conditions that will cause the Library License to take effect.  For example, it might be when the paper version goes out of print, when quarterly sales drop below a certain threshold, or after a specified time.  At that point, a specified number of electronic copies will be made available to an agreed-upon national distributor who will provide control over the number of simultaneous check-outs.  The Library License program is administered by the Digital Public Library of America (DPLA), which oversees the provisioning of Library Licensed works between publishers and libraries.
+
+The Project does not seek to disrupt current or future business models for either publishers or authors.  Rather, the Library License is envisioned as a means of ensuring that libraries have access to old and new digital content in a way that complements publishers’ and authors’ rights in the content they create.  Library Licensed works will still be available for purchase, but there will be some number made available for public consumption.  
+
+We passionately believe authors should be able to easily make their livings as authors.  We also believe there is a point in the lifecycle of a work where it is of greater value to both publishers and authors if more people can be exposed to it.  This is a win for all parties.
+
+
+FORM LIBRARY LICENSE PROVISIONS
+ 
+Below please find template provisions to include in your agreements in order to automatically grant libraries the right to obtain a digital copy of the work covered by the agreement upon the occurrence of certain triggering events that are defined in the language below.  Please note that you may have different defined terms for the italicized terms in the provisions below.  In addition, you may need to change the section numbers in order to insert these provisions into your agreement.  For your convenience, all section references are bolded to ensure that all section references are changed to suit the style of your agreement.
+ 
+1. 	Library License.  Upon the occurrence of a Triggering Event both Publisher and Author agree to:
+ 
+1.1  provide each Library one digital copy of the Work at no charge to the Libraries in a format that will enable each Library to exercise the rights granted in Section 1.2 below; and
+ 
+1.2  automatically grant each Library a perpetual, non-exclusive, irrevocable, royalty-free, fully paid up right and license to copy and reformat the Work as necessary to distribute digital copies of the Work on a temporary basis to the Library’s members within the United States, subject to the following requirements:
+ 
+1.2.1  	the Library may only distribute one copy of the Work at a time so that only one Library member may have access to the Work at any given time;
+ 
+1.2.2  	the Library must limit the amount of time an individual has access to the copy pursuant to the Library’s standard lending policies; and
+ 
+1.2.3  	the Library must implement a commercially reasonable Technological Mechanism in any digital copy of the Work that it loans to its members to help ensure that the Library complies with Sections 1.2.1 and 1.2.2.  The Author and Publisher agree that nothing in this Section requires the Library to implement a Technological Mechanism in the digital copy of the Work that would prevent its members from exercising any rights its members may have under law to use copyrightable material, such as fair use or other similar rights.
+ 
+1.3  Upon the occurrence of a Triggering Event, the Author or Publisher will notify the DPLA that the rights set forth in Section 1 above are thereby granted to the Libraries, and the Publisher will deliver a digital copy of the Work to each Library in accordance with Section 1.1. 
+ 
+ 
+1.4  Definitions:
+ 
+1.4.1  	The “DPLA” means the Digital Public Library of America.
+ 
+1.4.2  	A “Library” means any branch of a public library or any library affiliated with a public or private educational institution for higher learning within the United States that have signed up to participate in the Library License Program administered by the DPLA. 
+ 
+1.4.3  	A “Technological Mechanism” means standard digital rights management technology available as of the date of the Triggering Event intended to help the Library comply with the restrictions set forth in Section 1.2.1 and 1.2.2.
+ 
+1.4.4  	A “Triggering Event” means the occurrence of any one of the following:
+ 
+a.              the later of the fifth anniversary of the Effective Date of this Agreement or third anniversary of the date on which the Work is first published;
+ 
+b.              Publisher’s failure to sell more than fifty (50) copies of the Work per month in the United States for three (3) consecutive months; or
+ 
+c.              Publisher ceasing to print new physical copies of the Work for general distribution, regardless if the Publisher continues to print the Work on demand, or make the Work available in digital form.
+ 
+
+
+
+</Text>
+        </Document>
+        <Document ID="5">
+            <Title>Benefits</Title>
+            <Text>Benefits
+1	The work is archived in public, keeping it accessible to the occasional user who wants it.
+2	The work might help build demand for other works by the author.
+3	
+Because the digital copy is released with restrictions on the number of simultaneous copies, the length of the lending period, and (potentially) the inability to print selections, it might drive incremental demand for copies printed on-demand by the publisher.</Text>
+        </Document>
+        <Document ID="12">
+            <Title>DRM</Title>
+            <Text>What about DRM?
+The License requires libraries to make a copy available through whatever digital distribution system they use. Those systems provide some level of digital rights management.  
+Are Library Licensed works copyright-free?
+Not at all. The author and/or publisher retain the copyright on the work. Libraries are merely given the right to distribute that copyrighted work.
+
+One digital coy is released to every library in America.  Only one copy may be checked out at a time, 
+A specified number of electronic copies will be made available to an agreed-upon national distributor who will provide control over teh number of simultaneous check-outs.</Text>
+        </Document>
+        <Document ID="17">
+            <Title>Will they come?</Title>
+            <Text>Will they come?
+We’re putting this instrument into the marketplace to see if there is interest.  
+
+Our goal is to leverage the library, it’s legacy as a cultural institutions and prominence in our collective imagination as more than just advocate for change, but as a creator of new technology and policy. to shape the future of information. 
+
+</Text>
+        </Document>
+        <Document ID="6">
+            <Title>LibraryLicenseJan.2013</Title>
+            <Text>Library License (LL)
+Jeff Goldenson, David Weinberger
+Harvard Library Innovation Lab
+
+Dalia Topelson, David O’Brien, Christopher Bavitz
+The Berkman Center for Internet &amp; Society, Harvard University
+
+January, 2013
+
+What is Library License?
+The Library License is an effort to create a space in the digital world where works, still under copyright, may be securely made available to the public. 
+
+The Library License is a model agreement between an author and her/his publisher that after a work has passed a specified threshold – sales have dropped below a certain level, a substantially new edition has come out, or a certain number of years have passed, etc. – every public and school library will be allowed to distribute one electronic copy of that work through the library’s usual digital distribution system.
+
+Why?
+The Library License is envisioned as a means of ensuring that libraries have access to old and new digital content in a way that complements publishers’ and authors’ rights in the content they create. 
+
+Inserting Library License into the existing Copyright Timeline
+#
+
+Works languish in copyright long after significant market interest subsides.  Why not make one digital edition, with appropriate DRM practices, available from each library?  
+
+
+Passing the threshold means that there is a significantly diminished commercial market for the work, so making one copy available at a time for the users of a library does no harm, but can bring important benefits:
+
+1	The work is archived in public, keeping it accessible to the occasional user who wants it.
+2	The work might help build demand for other works by the author.
+3	Because the digital copy is released with restrictions on the number of simultaneous copies, the length of the lending period, and (potentially) the inability to print selections, it might drive incremental demand for copies printed on-demand by the publisher.</Text>
+        </Document>
+        <Document ID="13">
+            <Title>What counts as a library</Title>
+            <Text>What counts as a library?
+A library is a branch of a public library or library within an educational system. We are working on specifying this in more detail.  
+
+</Text>
+        </Document>
+        <Document ID="7">
+            <Title>What is Library License?-1</Title>
+            <Text>What is Library License?
+The Library License is an agreement an author with her/his publisher that after a work has passed a specified threshold – sales have dropped below a certain level, a substantially new edition has come out, or a certain number of years have passed, etc. – every public and school library will be allowed to distribute one electronic copy of that work through the library’s usual digital distribution system.
+
+It’s the opposite of a self destruct mechanism.  
+Library License is a self-preservation mechanism to ensure that works are archived in our libraries and remain findable and readable through our library catalogs.  
+Safety net.  
+life of the author plus an additional 70 years.
+
+We 
+No longer in print, on the shelves of bookstores, or readily findable, books languish in copyright.  
+
+
+
+Library License is effort to encode this inflection point into actionable policy that to make this a reality.  
+
+</Text>
+        </Document>
+        <Document ID="18">
+            <Title>Distribution</Title>
+            <Text>Distribution
+We have not worked out the specifics of the distribution mechanism system.  One possible process is a work may be completed, and at pre-press, one digital proof may be sent to a trusted secure server where it remain in dark storage until the license becomes active.  At that point, distribution of </Text>
+        </Document>
+        <Document ID="8">
+            <Title>Why</Title>
+            <Text>Why?
+The Library License is envisioned as a means of ensuring that libraries have access to old and new digital content in a way that complements publishers’ and authors’ rights in the content they create. 
+
+The Library License is envisioned as a means of ensuring that libraries have access to old and new digital content that complements the rights and interests of publishers and authors. 
+
+Works languish in copyright long after significant market interest subsides.  Why not make one digital edition, with appropriate DRM practices, available from each library?  
+</Text>
+        </Document>
+        <Document ID="14">
+            <Title>Non-Disruptive</Title>
+            <Text>Non-Disruptive
+The Project does not seek to disrupt current or future business models for either publishers or authors.  Rather, the Library License is envisioned as a means of ensuring that libraries have access to old and new digital content in a way that complements publishers’ and authors’ rights in the content they create.  Library Licensed works will still be available for purchase, but there will be some number made available for public consumption.  
+
+We passionately believe authors should be able to easily make their livings as authors.  We also believe there is a point in the lifecycle of a work where it is of greater value to both publishers and authors if more people can be exposed to it.  This is a win for all parties.</Text>
+        </Document>
+        <Document ID="20">
+            <Title>Copyright</Title>
+            <Text>Copyright
+The Average American lives = 78.5 years.     
+For works created after 1978, copyright protects works lasts for the life of the author, plus an additional 70 years.   
+Library License is an effort to create a space in the digital world where works, still under copyright, may be securely made available to the public. 
+If an author publishes their work today, at the age of 40, this work will not enter the public domain until 70 + (78.5 year lifespan - current age of author (40) = 38.5, plus an additional 70 years = 98.5 + 2013 
+That’s a 98.5 year long tail! 
+
+20A work published today, by an author at the age of 40, will enter the public domain in:
+That work will not enter the public domain, on average, until: 
+August 5th, 2111
+
+Can’t we find a compromise, somewhere between today, March 4th 2013 and August 4th 2111 that we can agree that one electronic copy may made available to each library, for the benefit of everybody.  </Text>
+        </Document>
+        <Document ID="9">
+            <Title>LibraryLicenseJan.2013-1</Title>
+            <Text>
+
+
+
+
+
+
+
+
+
+
+
+
+Library Licensed works remain copyright protected and available for purchase.
+
+
+
+
+
+DRAFT LEGAL LANGUAGE
+
+LIBRARY LICENSE MISSION STATEMENT
+
+The Library License is an effort to create a space in the digital world where works, still under copyright, may be securely made available to the public.  
+
+Libraries:  Background and Function
+
+Libraries have historically provided access to repositories of knowledge, preserving information in the form of books, periodicals, and more.  Libraries have historically done this by acquiring and preserving books.  Libraries acquire books from publishers or secondary markets, make the books accessible to patrons within their buildings, and loan the books to their members under the “first-sale doctrine” and other exemptions to the copyright laws in the United States.  Public libraries also serve a second and related set of purposes, including acting as community centers, imbuing patrons with a love of reading, and curating catalogs to promote relevant works to interested readers.  
+
+Libraries:  Historical Challenges
+
+Libraries have always faced significant challenges in fulfilling these roles – particularly in the roles of archivist and preservationist.  Those challenges include financial and physical space constraints associated with acquiring and maintaining new works.  Such constraints force libraries to limit acquisitions and purge collections, leading to incomplete catalogs.  Once books go out of print, works become even less available, making it even more difficult for libraries to identify, locate, and acquire older works that are relevant to their patrons. 
+
+Libraries and Digitization:  The Promise
+
+The era of digitization and ebooks is one of extraordinary promise for authors, publishers, libraries, and readers alike.  Digital distribution promises lower book costs given the elimination of expenses associated with physical printing and the moving of physical editions.  And, the ability to store works digitally will alleviate some of libraries’ concerns about maintenance of physical repositories.
+
+Libraries and Digitization:  Risks and Perils
+
+Digitization presents a number of challenges for libraries as well.  While publishers may keep books “in print” digitally longer than they might have in physical formats, given the relatively limited incremental costs associated with maintaining less popular works in their digital catalogs, they might be less willing to make digital editions available to libraries to prevent cannibalization of potential long-tail revenues.  Also, the law is unsettled as to whether the limitations in the Copyright Act would enable libraries to distribute digital files without permission, creating a risk that libraries may be sanctioned for emulating the physical distribution model in the digital realm.  Even if libraries are able to work out arrangements with publishers to secure digital works (or digitize and distribute works available in print format), libraries may not be able to identify the original authors or other rights holders of orphan works.
+
+The Library License
+
+The Library License Project, based at Harvard and proceeding with support from the Harvard Library Lab, the Harvard Library Innovation Lab, and the Berkman Center for Internet &amp; Society, seeks to ensure that libraries are able to maintain significant collections of digital works and make those works available to library patrons using Library License.  
+
+Library License is a clause for authors and publishers to insert in publishing contracts that makes works available online through libraries while still under copyright but after sales have dropped below a trigger point.  The Library License allows the author and publisher to agree on the conditions that will cause the Library License to take effect.  For example, it might be when the paper version goes out of print, when quarterly sales drop below a certain threshold, or after a specified time.  At that point, a specified number of electronic copies will be made available to an agreed-upon national distributor who will provide control over the number of simultaneous check-outs.  The Library License program is administered by the Digital Public Library of America (DPLA), which oversees the provisioning of Library Licensed works between publishers and libraries.
+
+
+
+FORM LIBRARY LICENSE PROVISIONS
+ 
+Below please find template provisions to include in your agreements in order to automatically grant libraries the right to obtain a digital copy of the work covered by the agreement upon the occurrence of certain triggering events that are defined in the language below.  Please note that you may have different defined terms for the italicized terms in the provisions below.  In addition, you may need to change the section numbers in order to insert these provisions into your agreement.  For your convenience, all section references are bolded to ensure that all section references are changed to suit the style of your agreement.
+ 
+1. 	Library License.  Upon the occurrence of a Triggering Event both Publisher and Author agree to:
+ 
+1.1  provide each Library one digital copy of the Work at no charge to the Libraries in a format that will enable each Library to exercise the rights granted in Section 1.2 below; and
+ 
+1.2  automatically grant each Library a perpetual, non-exclusive, irrevocable, royalty-free, fully paid up right and license to copy and reformat the Work as necessary to distribute digital copies of the Work on a temporary basis to the Library’s members within the United States, subject to the following requirements:
+ 
+1.2.1  	the Library may only distribute one copy of the Work at a time so that only one Library member may have access to the Work at any given time;
+ 
+1.2.2  	the Library must limit the amount of time an individual has access to the copy pursuant to the Library’s standard lending policies; and
+ 
+1.2.3  	the Library must implement a commercially reasonable Technological Mechanism in any digital copy of the Work that it loans to its members to help ensure that the Library complies with Sections 1.2.1 and 1.2.2.  The Author and Publisher agree that nothing in this Section requires the Library to implement a Technological Mechanism in the digital copy of the Work that would prevent its members from exercising any rights its members may have under law to use copyrightable material, such as fair use or other similar rights.
+ 
+1.3  Upon the occurrence of a Triggering Event, the Author or Publisher will notify the DPLA that the rights set forth in Section 1 above are thereby granted to the Libraries, and the Publisher will deliver a digital copy of the Work to each Library in accordance with Section 1.1. 
+ 
+ 
+1.4  Definitions:
+ 
+1.4.1  	The “DPLA” means the Digital Public Library of America.
+ 
+1.4.2  	A “Library” means any branch of a public library or any library affiliated with a public or private educational institution for higher learning within the United States that have signed up to participate in the Library License Program administered by the DPLA. 
+ 
+1.4.3  	A “Technological Mechanism” means standard digital rights management technology available as of the date of the Triggering Event intended to help the Library comply with the restrictions set forth in Section 1.2.1 and 1.2.2.
+ 
+1.4.4  	A “Triggering Event” means the occurrence of any one of the following:
+ 
+a.              the later of the fifth anniversary of the Effective Date of this Agreement or third anniversary of the date on which the Work is first published;
+ 
+b.              Publisher’s failure to sell more than fifty (50) copies of the Work per month in the United States for three (3) consecutive months; or
+ 
+c.              Publisher ceasing to print new physical copies of the Work for general distribution, regardless if the Publisher continues to print the Work on demand, or make the Work available in digital form.
+ 
+
+
+
+</Text>
+        </Document>
+    </Documents>
+</SearchIndexes>

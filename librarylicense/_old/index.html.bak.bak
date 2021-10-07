@@ -1,0 +1,156 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
+<meta content="Library License is a tool to grant public non-commercial online access to copyrighted material."/>
+<title>Library License</title>
+<link type="text/css" href="style.css" rel="stylesheet"/>
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+<script type="text/javascript">
+$(document).ready(function() {
+  function filterPath(string) {
+  return string
+    .replace(/^\//,'')
+    .replace(/(index|default).[a-zA-Z]{3,4}$/,'')
+    .replace(/\/$/,'');
+  }
+  var locationPath = filterPath(location.pathname);
+  var scrollElem = scrollableElement('html', 'body');
+
+  $('a[href*=#]').each(function() {
+    var thisPath = filterPath(this.pathname) || locationPath;
+    if (  locationPath == thisPath
+    && (location.hostname == this.hostname || !this.hostname)
+    && this.hash.replace(/#/,'') ) {
+      var $target = $(this.hash), target = this.hash;
+      if (target) {
+        var targetOffset = $target.offset().top;
+        $(this).click(function(event) {
+          event.preventDefault();
+          $(scrollElem).animate({scrollTop: targetOffset}, 400, function() {
+            location.hash = target;
+          });
+        });
+      }
+    }
+  });
+
+  // use the first element that is "scrollable"
+  function scrollableElement(els) {
+    for (var i = 0, argLength = arguments.length; i <argLength; i++) {
+      var el = arguments[i],
+          $scrollElement = $(el);
+      if ($scrollElement.scrollTop()> 0) {
+        return el;
+      } else {
+        $scrollElement.scrollTop(1);
+        var isScrollable = $scrollElement.scrollTop()> 0;
+        $scrollElement.scrollTop(0);
+        if (isScrollable) {
+          return el;
+        }
+      }
+    }
+    return [];
+  }
+
+});
+</script>
+</head>
+<body>
+<div id="container">
+        <div id="header">
+            <div id="headerlogo">
+                <h1><a href="index.html">Library License</a></h1> <span class="bold2">LL</span>
+					<div class="post-it creativeCommons">
+            			<div class="post-it-inner red">
+            				<p>Stay tuned for a new website draft license <span class="cyan">April 2013</span></p>
+           	 			</div>
+           	 		</div>
+            		<div class="post-it thoughts">
+            			<div class="post-it-inner red">
+            				<p>This is a young idea. A draft to be edited, revised, evolved.</p>  
+            				<p class="cyan"> <a href="#attribution">Thoughts?</a></p>  
+           	 			</div>
+           	 		</div>
+        	</div> <!--headerLogo-->
+        </div> <!--End header-->
+        	<!--<img class="intro-img" src="images/librarylicense-small.png">-->
+            
+            <span class="section">Library License Concept</span>
+            <p>Library License is a tool to grant public non-commercial online access to copyrighted material.  Library Licensed works will be served over a secure, rights managed platform provided by libraries. </p> 
+            <p>Content producers could add a Library License to the terms of their publishing contracts.</p> 
+            <p class="cyan"><a href="process.html">Here's a sketch of the process.</a></p> 
+            
+            <span class="section">Licenses</span>
+            <p class="license"><span class="bold">LL<span class="year">5 <span class="date">12/16/2016</span></span></span><br />
+            After 5 years, full digital rights are granted to libraries</p> 
+            <p class="license"><span class="bold">LL<span class="year">0 <span class="date">Now</span></span></span><br />
+            Immediate digital rights granted concurrently with commercial launch</p> 
+            
+            <span class="section">Institutional Carve-outs</span>
+            <p class="license"><span class="bold">LL<span class="year">5-DPLA <span class="date">12/16/2016 <span class="black">|</span> <a href="http://www.dp.la" target="_blank">www.dp.la</a></span></span></span><br />
+            After 5 years, full digital rights are granted to the Digital Public Library of America</p>
+            <p class="license"><span class="bold">LL<span class="year">5-Harvard University <span class="date">12/16/2016 <span class="black">|</span> <a href="http://www.dp.la" target="_blank">www.harvard.edu</a></span></span></span><br />
+            After 5 years, full digital rights are granted to those with access to the Harvard Library</p>             
+            
+            <span class="section">Performance-based Licenses</span>
+            <p class="license"><span class="bold">LL<span class="year">$ <span class="date">Currently unavailable <span class="black">|</span> inquire?</span></span></span><br />
+            A dynamic LL tied to sales or other performance-based thresholds</p> 
+			<img class="logo" src="images/timeline.png">
+            
+            <span class="section">Interactive Iconography</span>
+            <p class="license"><span class="bold">LL<span class="year">Hover Mouse Here <span class="date">To reveal date of library availability</span></span></span><br />
+            The LL Seal is interactive.  Mousing over the information above right reveals more data (explore icons above). </p> 
+            <p class="license"><span class="bold">LL<span class="year"></span><span class="mail"><img src="images/mail.png"><span class="email-me">Enter Email for Updates</span></span></span><br />
+            Connect with licensed works directly.  The envelope icon indicates the work may email you when it becomes available in libraries.</p> 
+        	<p class="license"><span class="bold">LL<span class="year">5-DPLA <span class="date">12/16/2016 <span class="black">|</span> <a href="http://www.dp.la" target="_blank">www.dp.la</a></span></span><span class="mail"><img src="images/mail.png"><span class="email-me">Enter Email for Updates</span></span></span><br />
+            A complete interactive example.</p> 
+        	
+        	
+    <div class="clear"></div>
+    	<span class="section">About this Project</span>
+        
+        <p id="attribution">This is a collaborative project between <span class="liblink"><a href="http://librarylab.law.harvard.edu/">The Harvard Library Innovation Laboratory</a> and <span class="liblink"><a href="http://librarylab.law.harvard.edu/">The Berkman Center for Internet and Society</a></span><br/>Questions? Email Jeff Goldenson<br/> jgoldenson (at) law.harvard.edu</p>    
+        <a href="http://librarylab.law.harvard.edu/"><img class="stamp" src="images/liblabstamp.png"/></a><a href="http://cyber.law.harvard.edu/"><img class="berk-stamp" src="images/berkman.png"/></a>
+    <div class="clear"></div> 
+    <div id="footer"></div>
+
+
+<!--
+<div id="comments-section"> 
+    <div id="disqus_thread"></div>
+
+<script type="text/javascript">
+    
+    var disqus_shortname = 'librarylicense'; 
+
+    
+    (function() {
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        dsq.src = 'http://' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="http://disqus.com" class="dsq-brlink">blog comments powered by <span class="logo-disqus">Disqus</span></a>
+</div>End comments section-->
+
+</div><!--End container-->
+
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-27967578-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+
+</body>
+</html>

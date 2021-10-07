@@ -1,0 +1,381 @@
+<!doctype>
+<html>
+<head>
+	<title>Library License</title>
+
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />	
+	<link rel="stylesheet" href="css/TangleKit.css" type="text/css">
+    <link href="bootstrap/css/bootstrap.css" rel="stylesheet">
+     <link href="bootstrap/css/bootstrap-responsive.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <link href="css/typeplate.css" rel="stylesheet">
+  
+    <link href="datepicker/css/datepicker.css" rel="stylesheet" media="screen">
+	<link href='http://fonts.googleapis.com/css?family=PT+Serif' rel='stylesheet' type='text/css'>
+	
+	
+	<script type="text/javascript" src="js/jquery/jquery-1.7.1.min.js"></script>
+	<script type="text/javascript" src="js/jquery/jquery-ui-1.8.17.custom.min.js"></script>
+	  <script type="text/javascript"src="js/moment.min.js"></script>
+	    <script type="text/javascript" src="datepicker/js/bootstrap-datepicker.js"></script>
+<script type="text/javascript">
+
+	
+    var DATE_FORMAT= 'MM-DD-YYYY';
+      
+      function calculatePublicDomain(pubDate, authorAge) {
+        /*
+        * Calculates the date in which this work will enter the public domain.
+        * For works created after 1978, copyright protects works lasts for the
+        * life of the author, plus an additional 70 years.
+        *
+        * We assume the average American lives 78.5 years.
+        */
+        var LIFESPAN = 78.5;
+        var yearsToPublicDomain = LIFESPAN - authorAge + 70;
+
+        var d = moment(pubDate, DATE_FORMAT);
+        d.add('years', yearsToPublicDomain);
+        return d.format(DATE_FORMAT);
+      }
+
+		function numberWithCommas(x) {
+    		return x.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+		}
+
+	$(document).ready(function() {
+		
+		$('.toggle-button').click(function(event){
+		$('.toggle-button').addClass('active');
+		$(this).next().slideToggle(150);
+		event.preventDefault();
+		});
+    	$(".date").datepicker("setValue", new Date()).on('changeDate', function(ev){
+    		runCalculator();//necessary?
+    	}); //set to today
+    	
+    	 runCalculator();   
+       
+        $("#authorAge").on("change", function() {
+              runCalculator();      
+    	});		
+    	$("#pubDate").on("keyup", function() {
+              runCalculator();      
+    	});	
+    	
+	
+	    function runCalculator() {
+	    var pubDate = $("#pubDate").val();
+          if (!pubDate || !moment(pubDate, DATE_FORMAT).isValid()) {
+            alert('Please enter a valid date in the format ' + DATE_FORMAT);
+            return;
+          }
+          var authorAge = $("#authorAge").val();
+          if (!authorAge) {
+            alert("Please enter an age for the author");
+            return;
+          }
+          var pdDate = calculatePublicDomain(
+            pubDate, authorAge
+          );
+
+          //$("#result").text(pdDate);
+        var a = moment(pdDate, DATE_FORMAT); console.log(pdDate); 
+		var b = moment(pubDate, DATE_FORMAT);console.log(pubDate);
+		var difference = a.diff(b, 'days'); console.log(difference);
+		var conversion = numberWithCommas(difference);
+			$("#result").html(' ' + conversion + ' days');
+          $("#result_wrapper").show();
+	    }
+	    });
+</script>
+</head>
+
+<body onload="">
+
+
+<div class="container" id="active">
+
+<div class="masthead">
+        <div class="navbar">
+          <div class="navbar-inner">
+            <div class="container">
+              <ul class="nav">
+                <li><a href="index.html">Home</a></li>
+                <li class="active"><a href="about.html">About</a></li>
+                <li><a href="design.html">Design your License</a></li>
+              </ul>
+            </div>
+          </div>
+        </div><!-- /.navbar -->
+      </div>
+		
+  		
+			<div class="row">
+    		<div class="span12">
+					<img class="center" src="img/ll-icon.png"/>
+			</div>
+		</div><!--row-->
+  		<div class="row">
+    		<div class="span12">
+				<h1 class="center">Library License</h1>
+			</div>
+		</div><!--row-->
+		
+		<div class="row">
+    		<div class="offset2 span8 column calculator"> <!-- body wrapper -->
+    			<!--<h4 class="center">(Crude) Copyright Calculator</h4>-->
+    			
+				<form class="form-horizontal red">
+				  <div class="control-group">
+				  	<h4>If a book's published today</h4>
+					<!--<label class="control-label" for="pubDate">Let's say you publish on</label>-->
+					<div class="controls center">
+					  <div class="input-append date" data-date="01-01-2013" data-date-format="mm-dd-yyyy">
+						<input id="pubDate" class="span2" size="16" type="text" value="01-01-2013">
+						<span class="add-on"><i class="icon-th"></i></span>
+					  </div>
+					</div>
+				  </div>
+				  <div class="control-group">
+					<!--<label class="control-label author" for="authorAge">when you're</label>-->
+					<h4>by an author who's</h4>
+					<div class="controls center">
+					  <div class="input-append">
+						<input type="number" step="any" id="authorAge" value="40" class="span2" size="16" placeholder="Age">
+						<span class="add-on">years old</span>
+					  </div>
+					</div>
+				  </div>
+				  <div class="control-group">
+					<div class="controls ">
+					  <h4 class="center">it won't enter the public domain for</h4>
+    			<div id="result_wrapper">
+        			<h2 class="cyan center"><span id="result"></span></h2>
+    			</div>
+    			<h4 class="center">Library License aims to get it in libraries faster than that.</h4>
+					</div>
+				  </div>
+				</form>
+				
+			</div>
+		</div><!--row-->
+		
+		
+		
+		
+		
+		<br/><!--add spacing the old fashion way-->
+		<div class="row">
+    		<div class="span12">
+    		<br/>
+				<h3 class="center">FAQ</h3>
+			</div>
+		</div><!--row-->
+    	<div class="row">
+    		<div class="span6">
+					<div>
+						<div class="toggle-button"><h4 class="delta pointer">What is Library License?</h4></div>
+							<div class="toggle-pane">
+								<p> Library License is a contractual rider an author can negotiate with a publisher that gives one online copy to public libraries after the book has stopped selling.</p>
+								
+								<p>The license is triggered by a set of conditions that the author negotiates with the publisher, including: book sales have dropped to a particular level, a new edition has come out, a specified period of time has passed, etc.</p>
+		
+								<p>Once the Library License comes into effect, a digital copy of the book is made available to participating public and school libraries. These libraries offer that Library Licensed copy -- one reader at a time -- through their normal managed system for lending e-books. The book is still in copyright, and is protected by whatever Digital Rights Management system the library uses.</p>
+							</div>
+					</div>
+					<div>
+						<div class="toggle-button"><h4 class="delta pointer">Who's working on it?</h4></div>
+							<div class="toggle-pane">
+								<p>It’s a collaboration between the Harvard Library Innovation Lab and the Berkman Center for Internet and Society.  Its development was funded by the Harvard Library Lab, which is made possible through the generous support of the Arcadia Fund.</p>
+							</div>
+					</div>
+					
+					<div>
+						<div class="toggle-button"><h4 class="delta pointer">What problem does Library License solve?</h4></div>
+							<div class="toggle-pane">
+								<p>Once books stop selling, they become unavailable. But even though there may not be any more buyers of the book, there may well be potential readers. Library License gives books a second life after they are no longer commercially viable.</p>
+							</div>
+					</div>
+			
+				<div>
+						<div class="toggle-button"><h4 class="delta pointer">What is the Library License?</h4></div>
+							<div class="toggle-pane">
+								<p>Technically, it’s a set of legal provisions gathered into an addendum -- a rider --  to the author’s contract with the publisher. The provisions specify the conditions under which the Library License comes into effect. Additionally, the author can ask that the work take on a Creative Commons open access license that specifies some permitted exemptions from the standard copyright the work enjoys.</p>
+								
+								<p>Library License is also a distribution mechanism. Once the conditions are met, an electronic copy of the book is given to an institution that manages the process by which a single copy is made available to participating libraries. (This institution might be a large library, library association, or other reliable archival institution.)</p>
+		
+								<p>At that point, any public or school library that wants to make a copy available to its users can do so. One reader at a time is allowed to read the work for free.</p>
+							</div>
+					</div>
+					
+					
+					<div>
+						<div class="toggle-button"><h4 class="delta pointer">What does Library License mean for me as a reader?</h4></div>
+							<div class="toggle-pane">
+								<p> Some works that are still in copyright will become available through your library for you to read online for free. .</p>
+								
+								<p>Your ability to download and copy these works will be limited in the same ways other books provided by your library are, unless the author of the work has specified that the book will be available under a Creative Commons license (learn more about <a href="http://creativecommons.org/">Creative Commons</a>).</p>
+							</div>
+					</div>
+					
+					
+					<div>
+						<div class="toggle-button"><h4 class="delta pointer">What does Library License mean for me as an author?</h4></div>
+							<div class="toggle-pane">
+								<p>When your book is no longer making you or your publisher money, it will still be available through public and school libraries.</p>
+								
+								<p>You will retain whatever copyright you had, although you can optionally provide copies to libraries under a Creative Commons license (learn more about <a href="http://creativecommons.org/">Creative Commons</a>).</p>
+							</div>
+					</div>
+					
+					
+					<div>
+							<div class="toggle-button"><h4 class="delta pointer">What does Library License mean for me as a publisher?</h4></div>
+								<div class="toggle-pane">
+								<p> Library License is a contractual rider you negotiate with an author. It provides limited online access to the work through libraries after it is no longer earning substantial money for you. It does not by itself affect your license to the print version of the work.</p>
+							</div>
+					</div>
+				</div>
+				
+				
+				
+				
+				<div class="span6">
+					<div>
+						<div class="toggle-button"><h4 class="delta pointer">What does Library License mean for me as a librarian?</h4></div>
+							<div class="toggle-pane">
+								<p> A stream of in-copyright works will become available to you to distribute through your usual e-book distribution mechanism. This mechanism will permit only one simultaneous copy be lent at a time, along with whatever other digital rights management your mechanism imposes.</p>
+								
+								<p>If you already offer an e-copy of a work that has come under Library License, you now will have one more simultaneous copy to offer.</p>
+		
+								<p>If the Library License includes the adoption of a Creative Commons license, you will be able to offer this work without the DRM restrictions that the CC license supersedes.</p>
+							</div>
+					</div>
+					<div>
+						<div class="toggle-button"><h4 class="delta pointer">What counts as a library?</h4></div>
+							<div class="toggle-pane">
+								<p> We intend to include public and school libraries in the United States. Generally these are easy to identify. There are, however, edge cases. We are working on the specifics. When in doubt, we intend to err on the side of generosity, so long as the library has a reliable mechanism for controlling distribution.</p>
+							</div>
+					</div>
+					<div>
+						<div class="toggle-button"><h4 class="delta pointer">Are Library Licensed works copyright-free?</h4></div>
+							<div class="toggle-pane">
+								<p> Not at all. The author and/or publisher retain the copyright on the work. Libraries are merely given the right to distribute one (1) digital copy of that work.  A specified number of electronic copies will be made available to an agreed-upon national distributor who will provide control over the number of simultaneous check-outs.</p>
+							</div>
+					</div>
+					<div>
+						<div class="toggle-button"><h4 class="delta pointer">What about Digital Rights Management (DRM)?</h4></div>
+							<div class="toggle-pane">
+								<p> Licensed works will be made available through whatever secure digital distribution system each library uses.  Library License relies on those those systems to provide some level of digital rights management.  </p>
+							</div>
+					</div>
+					<div>
+						<div class="toggle-button"><h4 class="delta pointer">How big a step is Library License?</h4></div>
+							<div class="toggle-pane">
+								<p>The Project does not seek to disrupt current or future business models for either publishers or authors.  Rather, the Library License is envisioned as a means of ensuring that libraries have access to old and new digital content in a way that complements publishers’ and authors’ rights in the content they create.  Library Licensed works will still be available for purchase, but there will be some number made available for public consumption.  </p>
+						
+								<p>We passionately believe authors should be able to easily make their livings as authors.  We also believe there is a point in the lifecycle of a work where it is of greater value to both publishers and authors if more people can be exposed to it.  This is a win for all parties.</p>
+							</div>
+					</div>
+					<div>
+						<div class="toggle-button"><h4 class="delta pointer">May LL apply already-published works?</h4></div>
+							<div class="toggle-pane">
+								<p> Library License is seen as a flexible instrument.  In time, we hope to explore Library Licensing in print, back catalog works.  </p>
+							</div>
+					</div>
+					<div>
+						<div class="toggle-button"><h4 class="delta pointer">Who manages the Library License?  Who is the intermediary?</h4></div>
+							<div class="toggle-pane">
+								<p> At this stage, we have not identified a governing body who will look after the license and/or host and serve library licensed works to libraries across the US.</p>
+							</div>
+					</div>
+					<div>
+						<div class="toggle-button"><h4 class="delta pointer">How does distribution work?</h4></div>
+							<div class="toggle-pane">
+								<p> We have not worked out the mechanics of a distribution system.  One possible piece of the process is that at the time of printing, one digital proof may be sent to a trusted secure server where it remains in dark storage until the license becomes active.  At that point, the intermediary distributes the work. </p>
+							</div>
+					</div>
+				
+			</div>
+		</div><!--row-->
+<div class="row">
+    		<div class="span12">
+    		<br/>
+				<h3 class="center">Team</h3>
+			</div>
+		</div><!--row-->
+		<div class="row">
+    		<div class="span6"> 
+    			<div class="column step1">
+    				<div class="toggle-button"><h3 class="title">Christopher Bavitz</a></h3></div>
+						<div class="toggle-pane">
+							<p>Christopher T. Bavitz is Assistant Director of Harvard Law School's Cyberlaw Clinic, based at the Berkman Center for Internet & Society. He is also a Lecturer on Law at HLS. Christopher has concentrated his practice on intellectual property and media law, particularly in the areas of music, entertainment, and technology. Prior to joining the Clinic, Christopher served as Senior Director of Legal Affairs for EMI Music North America. From 1998-2002, Christopher was a litigation associate at Sonnenschein Nath & Rosenthal and RubinBaum LLP / Rubin Baum Levin Constant & Friedman, where he focused on copyright and trademark matters. Christopher received his B.A., cum laude, from Tufts University in 1995 and his J.D. from University of Michigan Law School in 1998.</p>
+						</div>
+    			</div>
+    			<div class="column step1">
+    				<div class="toggle-button"><h3 class="title">Jeff Goldenson</a></h3></div>
+						<div class="toggle-pane">
+						<p>Jeff Goldenson works at the intersection of libraries, technology and fun. He is the designer in the Harvard Library Innovation Lab where he imagines and builds new library experiences.  </p>
+						<p>Previously, he was an artist-in-residence at EdLab, Teachers College, Columbia University.   He earned a Masters of Science from the MIT Media Lab as a Research Assistant identifying new metaphors for media browsing.  He received his BA in Architecture from Princeton University.</p>
+					</div>
+    			</div>
+    			<div class="column step1">
+    				<div class="toggle-button"><h3 class="title">Caroline Nolan</h3></div>
+    				<div class="toggle-pane">
+						<p>Caroline Nolan is the Berkman Center's Associate Director.  She has worked on a variety of initiatives and events since she joined the Center in May 2007. She currently contributes to Center's cybersecurity project, cloud computing series, work on the Global Network Initiative, in addition to other efforts.</p>
+						
+						<p>Caroline has a Master's degree in International Affairs from the Fletcher School of Law & Diplomacy at Tufts University, and a Bachelor's degree from Brown University. While attending Fletcher, Caroline worked as a researcher for Reebok's human rights department and the Boston Consortium on Gender, Security and Human Rights. During her first career, she was a sous chef at Rialto restaurant in Cambridge.</p>
+					</div>
+    			</div>
+    		</div>
+    		<div class="span6"> 
+    		    <div class="column step1">
+					<div class="toggle-button"><h3 class="title">David O'Brien</a></h3></div>
+    				<div class="toggle-pane">
+						<p>David O'Brien joined the Berkman Center staff as a project coordinator in February 2011. David has been contributing legal and policy research to a number of Berkman projects and publications since 2009, including the Citizen Media Law Project, Global Network Initiative, the Law Lab, and the ICANN Accountability and Transparency review process, among others.</p>
+						
+						<p>David holds a J.D. from Northeastern University and a B.S. in economics and business administration. While in law school, David held positions in the Copyright, Trademark, New Media & Entertainment department at Fish & Richardson, at Inverness Medical Innovations’ in-house legal department, and with the Hon. Judith Dein at the U.S. District Court for the District of Massachusetts.</p>
+						
+						<p>Beyond his work at Berkman, David spends his free time pretending to be a chef at home, occasionally voiding warranties while doing DIY disassembly and repair, and spending as much time as possible outdoors in Boston, California, and Colorado.</p>
+					</div>
+				</div>
+    			<div class="column step1">
+    				<div class="toggle-button"><h3 class="title">Dalia Topelson</a></h3></div>
+    				<div class="toggle-pane">
+						<p>Dalia Topelson is a Clinical Instructor at Harvard Law School's Cyberlaw Clinic, based at Harvard's Berkman Center for Internet & Society.  Dalia has concentrated her legal practice on intellectual property and media law, particularly in the areas of technology, media and digital content.  Prior to joining Harvard Law School, Dalia worked as in-house counsel at Amazon.com.  From 2004-2009, Dalia worked as an associate in the New York law offices of Weil, Gotshal & Manges LLP and DLA Piper LLP, focusing on intellectually property and technology issues.  Dalia received her B.A., magna cum laude, from Emory University in 1999 and her J.D. and LLM in International Law from Duke University School of Law in 2004.</p>
+					</div><!--toggle pane-->
+    			</div>
+    		
+    			<div class="column step1">
+    				<div class="toggle-button"><h3 class="title">David Weinberger</a></h3></div>
+    				
+					<div class="toggle-pane">
+						<p>David Weinberger writes about the effect of technology on ideas.</p>
+						
+						<p>He is the author of <a href="http://www.smallpieces.com/index.php">Small Pieces Loosely Joined</a> and <a href="http://www.everythingismiscellaneous.com/">Everything Is Miscellaneous</a>, and is the co-author of <a href="http://www.cluetrain.com/">The Cluetrain Manifesto</a>. His most recent book, <a href="http://www.toobigtoknow.com/">Too Big to Know</a>, about the Internet's effect on how and what we know.</p>
+						
+						<p>Dr. Weinberger is co-director of the Harvard Library Lab and is a senior researcher at the Berkman Center. He has been a strategic marketing consultant, an adviser to several presidential campaigns, and for two years was a Franklin Fellow at the United States Department of State. He has a doctorate in philosophy.</p>
+    				</div><!--toggle pane-->
+    			</div>
+    		</div>
+    	</div><!--row-->
+    		
+    		<br/><br/>
+      
+    	<footer>
+      		<div class="row">
+      			<div class="span6">
+      				<a href="http://librarylab.law.harvard.edu/"><img class="stamp" src="img/liblabstamp.png"/></a><a href="http://cyber.law.harvard.edu/"><img class="berk-stamp" src="img/berkman.png"/></a>
+        		</div>
+        		<div class="span6">
+        			<p>Copyright &copy; 2012 The President and Fellows of Harvard College<br><a href="http://creativecommons.org/licenses/by-sa/3.0/">Creative Commons Attribution-ShareAlike 3.0 Unported License</a></p>
+      			</div>
+      		</div><!--row-->
+      	</footer>
+    </div><!--container-->
+    <div style="display:none;" id="cc-option-text">
+    	<p>CC Option <span id="cc-option-type"></span> is the best one.</p>
+    </div>
+</body>
+</html>

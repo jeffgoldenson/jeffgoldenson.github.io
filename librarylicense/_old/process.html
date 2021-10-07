@@ -1,0 +1,116 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
+<meta content="Library License, content producers granting libraries special digital access"/>
+<title>Library License: Process</title>
+<link type="text/css" href="style.css" rel="stylesheet"/>
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+<script type="text/javascript">
+$(document).ready(function() {
+  function filterPath(string) {
+  return string
+    .replace(/^\//,'')
+    .replace(/(index|default).[a-zA-Z]{3,4}$/,'')
+    .replace(/\/$/,'');
+  }
+  var locationPath = filterPath(location.pathname);
+  var scrollElem = scrollableElement('html', 'body');
+
+  $('a[href*=#]').each(function() {
+    var thisPath = filterPath(this.pathname) || locationPath;
+    if (  locationPath == thisPath
+    && (location.hostname == this.hostname || !this.hostname)
+    && this.hash.replace(/#/,'') ) {
+      var $target = $(this.hash), target = this.hash;
+      if (target) {
+        var targetOffset = $target.offset().top;
+        $(this).click(function(event) {
+          event.preventDefault();
+          $(scrollElem).animate({scrollTop: targetOffset}, 400, function() {
+            location.hash = target;
+          });
+        });
+      }
+    }
+  });
+
+  // use the first element that is "scrollable"
+  function scrollableElement(els) {
+    for (var i = 0, argLength = arguments.length; i <argLength; i++) {
+      var el = arguments[i],
+          $scrollElement = $(el);
+      if ($scrollElement.scrollTop()> 0) {
+        return el;
+      } else {
+        $scrollElement.scrollTop(1);
+        var isScrollable = $scrollElement.scrollTop()> 0;
+        $scrollElement.scrollTop(0);
+        if (isScrollable) {
+          return el;
+        }
+      }
+    }
+    return [];
+  }
+
+});
+</script>
+</head>
+<body>
+<div id="container">
+        <div id="header">
+            <div id="headerlogo">
+                <h1><a href="index.html">Library License</a></h1> <span class="bold2">LL</span>
+					
+        	</div> <!--headerLogo-->
+        </div> <!--End header-->
+        	<!--<img class="intro-img" src="images/librarylicense-small.png">-->
+            
+            <span class="section">Negotiating with Publishers</span>
+            <img class="center" src="images/contract.png">
+            <p>While negotiating the terms of your contract with publishers, terms of the Library License will be agreed upon.</p> 
+            
+           	<span class="section">Performance-Based Licensing</span>
+            <img class="center" src="images/performance-trigger.png">
+            <p>When sales of the work drop beneath the agreed threshold, the Library License takes effect.</p> 
+            
+         <!--   <span class="section">Interactive Iconography</span>
+            <p class="licenseLarge"><span class="bold3">LL</span></p>
+           <div class="space"></div>
+           <p> With the license in effect, full digital rights to LL works are made available to recognized libraries.</p> 
+          --> 
+           <span class="section">Co-existence</span>
+            <img class="center" src="images/fork.png">
+            <p>With the license in effect, full digital rights are given to recognized libraries.  Publishers maintain exclusive commercial rights.</p> 
+            
+            
+            <span class="section">Access</span>
+            <img class="center" src="images/duty-free.png">
+            <p>Libraries continue their mission to provide information resources to the public.</p> 
+   
+    <div class="clear"></div> 
+    <div id="footer">
+    <p class="cyan2 underline">&larr; <a href="index.html">back home</a></p>
+    </div>
+
+
+
+</div><!--End container-->
+
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-27967578-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+
+</body>
+</html>
