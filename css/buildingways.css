@@ -4,9 +4,52 @@
 	www.buildingways.co
 */
 
+/* inter-regular - latin */
+@font-face {
+  font-family: 'Inter-regular';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url('../fonts/inter-v7-latin-regular.eot'); /* IE9 Compat Modes */
+  src: local('inter-regular'), local('inter regular'),
+       url('../fonts/inter-v7-latin-regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('../fonts/inter-v7-latin-regular.woff2') format('woff2'), /* Super Modern Browsers */
+       url('../fonts/inter-v7-latin-regular.woff') format('woff'), /* Modern Browsers */
+       url('../fonts/inter-v7-latin-regular.ttf') format('truetype'), /* Safari, Android, iOS */
+       url('../fonts/inter-v7-latin-regular.svg#Inter') format('svg'); /* Legacy iOS */
+}
+/* inter-800 - latin */
+@font-face {
+  font-family: 'Inter-bold';
+  font-style: normal;
+  font-weight: 800;
+  font-display: swap;
+  src: url('../fonts/inter-v7-latin-800.eot'); /* IE9 Compat Modes */
+  src: local('inter-bold'), local('inter bold'),
+       url('../fonts/inter-v7-latin-800.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('../fonts/inter-v7-latin-800.woff2') format('woff2'), /* Super Modern Browsers */
+       url('../fonts/inter-v7-latin-800.woff') format('woff'), /* Modern Browsers */
+       url('../fonts/inter-v7-latin-800.ttf') format('truetype'), /* Safari, Android, iOS */
+       url('../fonts/inter-v7-latin-800.svg#Inter') format('svg'); /* Legacy iOS */
+}
+/* inter-900 - latin */
+@font-face {
+  font-family: 'Inter-black';
+  font-style: normal;
+  font-weight: 900;
+  font-display: swap;
+  src: url('../fonts/inter-v7-latin-900.eot'); /* IE9 Compat Modes */
+  src: local('inter-black'), local('inter black'),
+       url('../fonts/inter-v7-latin-900.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('../fonts/inter-v7-latin-900.woff2') format('woff2'), /* Super Modern Browsers */
+       url('../fonts/inter-v7-latin-900.woff') format('woff'), /* Modern Browsers */
+       url('../fonts/inter-v7-latin-900.ttf') format('truetype'), /* Safari, Android, iOS */
+       url('../fonts/inter-v7-latin-900.svg#Inter') format('svg'); /* Legacy iOS */
+}
 
 body {
-
+  font-family: 'Inter-regular', system-ui, sans-serif;
+  color: #475569;
 }
 
 li ul, li ol {
@@ -154,7 +197,8 @@ li {
 
 h1, h2, h3, h4, h5, h6 {
 	font-weight: normal;
-	color:       #111;
+	color: #475569;
+	font-family: 'Inter-black', system-ui, sans-serif;
 }
 
 
