@@ -35,7 +35,7 @@ h1, h2, h3, h4, h5, h6 {
 h1 {
 	font-size:  3.25rem;
 	font-family:  BlinkMacSystemFont, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
-	line-height: 1;
+	font-weight: bold;
 	margin: 0.5em 0;
 	padding: 0 5px;
 	text-align: center;
@@ -43,7 +43,8 @@ h1 {
 
 h2 {
 	font-size:     2.25rem;
-	font-family:  'Georgia', serif;
+	font-family:  BlinkMacSystemFont, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+	font-weight: bold;
 	margin-bottom: 0.5em;
 	margin-top:    0em; 
 	padding: 0 0px;
@@ -256,7 +257,7 @@ li {
 	margin-bottom: 0.55em;
 	margin-top:    0.55em;
 	font-family:  'Georgia', serif;
-	font-size: 2.85rem;
+	font-size: 1rem;
 
 }
 /*/
@@ -585,8 +586,8 @@ div.jx-slider {
 	
 	h1 {
 		font-size:  4.125rem;
-		font-weight: bold;
 		font-family:  BlinkMacSystemFont, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+		font-weight: bold;
 		line-height: 1;
 		margin: 0.5em 0;
 		padding: 0 5px;
